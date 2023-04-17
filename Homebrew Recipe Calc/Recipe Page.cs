@@ -1419,7 +1419,6 @@ namespace Homebrew_Recipe_Calc
                 //Return to current form
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             //Close Button
@@ -1473,8 +1472,6 @@ namespace Homebrew_Recipe_Calc
             }
             catch (Exception) { }
         }
-
-
         private void quitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Close Button
@@ -1491,10 +1488,12 @@ namespace Homebrew_Recipe_Calc
             {
                 if (txtWaterVolume.Text.Length > 0)
                 {
-                    watervolume(txtWaterVolume);
-                    hopDataChange(txtWaterVolume);
                     txtHopAB.Text = "5";
                     tHopAB = double.Parse(txtHopAB.Text);
+                    watervolume(txtWaterVolume);
+                    hopDataChange(txtWaterVolume);
+                    ibuCalculator(txtWaterVolume);
+
                 }
                 if (txtGrainWT1.Text.Length > 0)
                 {
@@ -1748,7 +1747,6 @@ namespace Homebrew_Recipe_Calc
             }
             if (cboHopMin2 != null)
             {
-
                 try
                 {
                     conn.Open();
@@ -1878,7 +1876,6 @@ namespace Homebrew_Recipe_Calc
                                 {
                                     hopUtil[3] = double.Parse(hoputilization[3]);
                                     ibuCalculator(IBU[3]);
-
                                 }
                                 else
                                 {
@@ -1962,18 +1959,14 @@ namespace Homebrew_Recipe_Calc
                         conn.Close();
                     }
                 }
-
                 else
                 {
-
                 }
-
             }
         }
 
         private void txtHopAmt1_TextChanged(object sender, EventArgs e)
         {
-
             if (cboHops1 != null)
             {
                 hopAmount[0] = double.Parse(txtHopAmt1.Text);
@@ -2036,8 +2029,16 @@ namespace Homebrew_Recipe_Calc
                 if (hopAmount[4] != 0)
                 {
                 }
-                hopAB[4] = hopAmount[4] * tHopAB;
-                lblHopWA5.Text = hopAB[4].ToString("");
+                if (tHopAB != 5)
+                {
+                    hopAB[4] = hopAmount[4] * tHopAB;
+                    lblHopWA5.Text = hopAB[4].ToString("");
+                }
+                else
+                {
+                    hopAB[4] = hopAmount[4] * tHopAB;
+                    lblHopWA5.Text = hopAB[4].ToString("");
+                }
                 watervolume(txtHopAmt5);
             }
         }
@@ -2144,6 +2145,35 @@ namespace Homebrew_Recipe_Calc
                 }
             }
             else { }
+        }
+
+        private void txtAAA1_TextChanged(object sender, EventArgs e)
+        {
+            ibuCalculator(txtAAA1);
+        }
+
+        private void txtAAA2_TextChanged(object sender, EventArgs e)
+        {
+            ibuCalculator(txtAAA2);
+
+        }
+
+        private void txtAAA3_TextChanged(object sender, EventArgs e)
+        {
+            ibuCalculator(txtAAA3);
+
+        }
+
+        private void txtAAA4_TextChanged(object sender, EventArgs e)
+        {
+            ibuCalculator(txtAAA4);
+
+        }
+
+        private void txtAAA5_TextChanged(object sender, EventArgs e)
+        {
+            ibuCalculator(txtAAA5);
+
         }
 
     }
