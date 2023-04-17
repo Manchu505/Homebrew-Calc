@@ -295,7 +295,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 61F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.lblLbGrain1, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblLbGrain2, 2, 1);
@@ -2198,7 +2198,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 67F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 68F));
             this.tableLayoutPanel2.Controls.Add(this.lblIBU1, 5, 0);
             this.tableLayoutPanel2.Controls.Add(this.cboHops1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.cboHops2, 0, 1);
@@ -2398,7 +2398,7 @@
             this.lblHopWA1.BackColor = System.Drawing.Color.DarkGray;
             this.lblHopWA1.Location = new System.Drawing.Point(535, 9);
             this.lblHopWA1.Name = "lblHopWA1";
-            this.lblHopWA1.Size = new System.Drawing.Size(61, 13);
+            this.lblHopWA1.Size = new System.Drawing.Size(62, 13);
             this.lblHopWA1.TabIndex = 17;
             this.lblHopWA1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2408,7 +2408,7 @@
             this.lblHopWA2.AutoSize = true;
             this.lblHopWA2.Location = new System.Drawing.Point(535, 40);
             this.lblHopWA2.Name = "lblHopWA2";
-            this.lblHopWA2.Size = new System.Drawing.Size(61, 13);
+            this.lblHopWA2.Size = new System.Drawing.Size(62, 13);
             this.lblHopWA2.TabIndex = 17;
             this.lblHopWA2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2418,7 +2418,7 @@
             this.lblHopWA3.AutoSize = true;
             this.lblHopWA3.Location = new System.Drawing.Point(535, 71);
             this.lblHopWA3.Name = "lblHopWA3";
-            this.lblHopWA3.Size = new System.Drawing.Size(61, 13);
+            this.lblHopWA3.Size = new System.Drawing.Size(62, 13);
             this.lblHopWA3.TabIndex = 17;
             this.lblHopWA3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2428,7 +2428,7 @@
             this.lblHopWA4.AutoSize = true;
             this.lblHopWA4.Location = new System.Drawing.Point(535, 102);
             this.lblHopWA4.Name = "lblHopWA4";
-            this.lblHopWA4.Size = new System.Drawing.Size(61, 13);
+            this.lblHopWA4.Size = new System.Drawing.Size(62, 13);
             this.lblHopWA4.TabIndex = 17;
             this.lblHopWA4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2438,7 +2438,7 @@
             this.lblHopWA5.AutoSize = true;
             this.lblHopWA5.Location = new System.Drawing.Point(535, 133);
             this.lblHopWA5.Name = "lblHopWA5";
-            this.lblHopWA5.Size = new System.Drawing.Size(61, 13);
+            this.lblHopWA5.Size = new System.Drawing.Size(62, 13);
             this.lblHopWA5.TabIndex = 17;
             this.lblHopWA5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
