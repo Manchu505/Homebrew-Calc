@@ -1891,7 +1891,8 @@ namespace Homebrew_Recipe_Calc
         private void button1_Click(object sender, EventArgs e)
         {
             //Close Button
-            this.Dispose();
+            //this.Close();
+            Application.Exit();
         }
 
         private void txtYeastFactor_TextChanged(object sender, EventArgs e)
@@ -1944,7 +1945,8 @@ namespace Homebrew_Recipe_Calc
         private void quitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Close Button
-            this.Close();
+            //this.Close();
+            Application.Exit();
         }
         private void aBVCalculatorToolStripMenuItem_Click(object sender, EventArgs e)
         {
