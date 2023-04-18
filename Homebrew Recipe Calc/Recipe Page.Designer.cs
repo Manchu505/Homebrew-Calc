@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRecipe));
             this.lstYeast = new System.Windows.Forms.ListBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -259,12 +260,26 @@
             this.label13 = new System.Windows.Forms.Label();
             this.lblBeerName = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.lblSRMTotal = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.lblIBUTotal = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.lblABVTotal = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.lblFGTotal = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.lblOGTotal = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // lstYeast
@@ -274,6 +289,7 @@
             this.lstYeast.Name = "lstYeast";
             this.lstYeast.Size = new System.Drawing.Size(321, 69);
             this.lstYeast.TabIndex = 1;
+            this.lstYeast.TabStop = false;
             this.lstYeast.SelectedIndexChanged += new System.EventHandler(this.lstYeast_SelectedIndexChanged);
             // 
             // tableLayoutPanel1
@@ -283,21 +299,21 @@
             this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel1.ColumnCount = 16;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 66F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.lblLbGrain1, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblLbGrain2, 2, 1);
@@ -434,7 +450,7 @@
             this.tableLayoutPanel1.Controls.Add(this.lblFGC7, 14, 6);
             this.tableLayoutPanel1.Controls.Add(this.lblFGC8, 14, 7);
             this.tableLayoutPanel1.Controls.Add(this.lblFGC9, 14, 8);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(40, 28);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(40, 41);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 10;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
@@ -447,7 +463,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1138, 288);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1195, 288);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -464,9 +480,9 @@
             // 
             this.lblLbGrain1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLbGrain1.AutoSize = true;
-            this.lblLbGrain1.Location = new System.Drawing.Point(271, 9);
+            this.lblLbGrain1.Location = new System.Drawing.Point(276, 9);
             this.lblLbGrain1.Name = "lblLbGrain1";
-            this.lblLbGrain1.Size = new System.Drawing.Size(59, 13);
+            this.lblLbGrain1.Size = new System.Drawing.Size(64, 13);
             this.lblLbGrain1.TabIndex = 7;
             this.lblLbGrain1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -474,9 +490,9 @@
             // 
             this.lblLbGrain2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLbGrain2.AutoSize = true;
-            this.lblLbGrain2.Location = new System.Drawing.Point(271, 40);
+            this.lblLbGrain2.Location = new System.Drawing.Point(276, 40);
             this.lblLbGrain2.Name = "lblLbGrain2";
-            this.lblLbGrain2.Size = new System.Drawing.Size(59, 13);
+            this.lblLbGrain2.Size = new System.Drawing.Size(64, 13);
             this.lblLbGrain2.TabIndex = 7;
             this.lblLbGrain2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -484,9 +500,9 @@
             // 
             this.lblPercent1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPercent1.AutoSize = true;
-            this.lblPercent1.Location = new System.Drawing.Point(337, 9);
+            this.lblPercent1.Location = new System.Drawing.Point(347, 9);
             this.lblPercent1.Name = "lblPercent1";
-            this.lblPercent1.Size = new System.Drawing.Size(59, 13);
+            this.lblPercent1.Size = new System.Drawing.Size(64, 13);
             this.lblPercent1.TabIndex = 7;
             this.lblPercent1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -494,9 +510,9 @@
             // 
             this.lblPPG1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPPG1.AutoSize = true;
-            this.lblPPG1.Location = new System.Drawing.Point(403, 9);
+            this.lblPPG1.Location = new System.Drawing.Point(418, 9);
             this.lblPPG1.Name = "lblPPG1";
-            this.lblPPG1.Size = new System.Drawing.Size(59, 13);
+            this.lblPPG1.Size = new System.Drawing.Size(64, 13);
             this.lblPPG1.TabIndex = 7;
             this.lblPPG1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -504,9 +520,9 @@
             // 
             this.lblAttn1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAttn1.AutoSize = true;
-            this.lblAttn1.Location = new System.Drawing.Point(469, 9);
+            this.lblAttn1.Location = new System.Drawing.Point(489, 9);
             this.lblAttn1.Name = "lblAttn1";
-            this.lblAttn1.Size = new System.Drawing.Size(59, 13);
+            this.lblAttn1.Size = new System.Drawing.Size(64, 13);
             this.lblAttn1.TabIndex = 7;
             this.lblAttn1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -514,9 +530,9 @@
             // 
             this.lblAff1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAff1.AutoSize = true;
-            this.lblAff1.Location = new System.Drawing.Point(535, 9);
+            this.lblAff1.Location = new System.Drawing.Point(560, 9);
             this.lblAff1.Name = "lblAff1";
-            this.lblAff1.Size = new System.Drawing.Size(59, 13);
+            this.lblAff1.Size = new System.Drawing.Size(64, 13);
             this.lblAff1.TabIndex = 7;
             this.lblAff1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -524,9 +540,9 @@
             // 
             this.lblLov1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLov1.AutoSize = true;
-            this.lblLov1.Location = new System.Drawing.Point(601, 9);
+            this.lblLov1.Location = new System.Drawing.Point(631, 9);
             this.lblLov1.Name = "lblLov1";
-            this.lblLov1.Size = new System.Drawing.Size(59, 13);
+            this.lblLov1.Size = new System.Drawing.Size(64, 13);
             this.lblLov1.TabIndex = 7;
             this.lblLov1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -534,9 +550,9 @@
             // 
             this.lblDP1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDP1.AutoSize = true;
-            this.lblDP1.Location = new System.Drawing.Point(667, 9);
+            this.lblDP1.Location = new System.Drawing.Point(702, 9);
             this.lblDP1.Name = "lblDP1";
-            this.lblDP1.Size = new System.Drawing.Size(59, 13);
+            this.lblDP1.Size = new System.Drawing.Size(64, 13);
             this.lblDP1.TabIndex = 7;
             this.lblDP1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -544,9 +560,9 @@
             // 
             this.lblPoi1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPoi1.AutoSize = true;
-            this.lblPoi1.Location = new System.Drawing.Point(733, 9);
+            this.lblPoi1.Location = new System.Drawing.Point(773, 9);
             this.lblPoi1.Name = "lblPoi1";
-            this.lblPoi1.Size = new System.Drawing.Size(59, 13);
+            this.lblPoi1.Size = new System.Drawing.Size(64, 13);
             this.lblPoi1.TabIndex = 7;
             this.lblPoi1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -554,9 +570,9 @@
             // 
             this.lblFer1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFer1.AutoSize = true;
-            this.lblFer1.Location = new System.Drawing.Point(799, 9);
+            this.lblFer1.Location = new System.Drawing.Point(844, 9);
             this.lblFer1.Name = "lblFer1";
-            this.lblFer1.Size = new System.Drawing.Size(59, 13);
+            this.lblFer1.Size = new System.Drawing.Size(64, 13);
             this.lblFer1.TabIndex = 7;
             this.lblFer1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -564,9 +580,9 @@
             // 
             this.lblCon1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCon1.AutoSize = true;
-            this.lblCon1.Location = new System.Drawing.Point(865, 9);
+            this.lblCon1.Location = new System.Drawing.Point(915, 9);
             this.lblCon1.Name = "lblCon1";
-            this.lblCon1.Size = new System.Drawing.Size(59, 13);
+            this.lblCon1.Size = new System.Drawing.Size(64, 13);
             this.lblCon1.TabIndex = 7;
             this.lblCon1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -574,9 +590,9 @@
             // 
             this.lblWA1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblWA1.AutoSize = true;
-            this.lblWA1.Location = new System.Drawing.Point(931, 9);
+            this.lblWA1.Location = new System.Drawing.Point(986, 9);
             this.lblWA1.Name = "lblWA1";
-            this.lblWA1.Size = new System.Drawing.Size(59, 13);
+            this.lblWA1.Size = new System.Drawing.Size(64, 13);
             this.lblWA1.TabIndex = 7;
             this.lblWA1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -584,9 +600,9 @@
             // 
             this.lblOGC1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblOGC1.AutoSize = true;
-            this.lblOGC1.Location = new System.Drawing.Point(997, 9);
+            this.lblOGC1.Location = new System.Drawing.Point(1057, 9);
             this.lblOGC1.Name = "lblOGC1";
-            this.lblOGC1.Size = new System.Drawing.Size(59, 13);
+            this.lblOGC1.Size = new System.Drawing.Size(64, 13);
             this.lblOGC1.TabIndex = 7;
             this.lblOGC1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -594,9 +610,9 @@
             // 
             this.lblFGC1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFGC1.AutoSize = true;
-            this.lblFGC1.Location = new System.Drawing.Point(1063, 9);
+            this.lblFGC1.Location = new System.Drawing.Point(1128, 9);
             this.lblFGC1.Name = "lblFGC1";
-            this.lblFGC1.Size = new System.Drawing.Size(59, 13);
+            this.lblFGC1.Size = new System.Drawing.Size(64, 13);
             this.lblFGC1.TabIndex = 7;
             this.lblFGC1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -604,9 +620,9 @@
             // 
             this.lblPPG2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPPG2.AutoSize = true;
-            this.lblPPG2.Location = new System.Drawing.Point(403, 40);
+            this.lblPPG2.Location = new System.Drawing.Point(418, 40);
             this.lblPPG2.Name = "lblPPG2";
-            this.lblPPG2.Size = new System.Drawing.Size(59, 13);
+            this.lblPPG2.Size = new System.Drawing.Size(64, 13);
             this.lblPPG2.TabIndex = 9;
             this.lblPPG2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -614,9 +630,9 @@
             // 
             this.lblAttn2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAttn2.AutoSize = true;
-            this.lblAttn2.Location = new System.Drawing.Point(469, 40);
+            this.lblAttn2.Location = new System.Drawing.Point(489, 40);
             this.lblAttn2.Name = "lblAttn2";
-            this.lblAttn2.Size = new System.Drawing.Size(59, 13);
+            this.lblAttn2.Size = new System.Drawing.Size(64, 13);
             this.lblAttn2.TabIndex = 7;
             this.lblAttn2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -624,9 +640,9 @@
             // 
             this.lblLov2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLov2.AutoSize = true;
-            this.lblLov2.Location = new System.Drawing.Point(601, 40);
+            this.lblLov2.Location = new System.Drawing.Point(631, 40);
             this.lblLov2.Name = "lblLov2";
-            this.lblLov2.Size = new System.Drawing.Size(59, 13);
+            this.lblLov2.Size = new System.Drawing.Size(64, 13);
             this.lblLov2.TabIndex = 7;
             this.lblLov2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -634,9 +650,9 @@
             // 
             this.lblPercent2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPercent2.AutoSize = true;
-            this.lblPercent2.Location = new System.Drawing.Point(337, 40);
+            this.lblPercent2.Location = new System.Drawing.Point(347, 40);
             this.lblPercent2.Name = "lblPercent2";
-            this.lblPercent2.Size = new System.Drawing.Size(59, 13);
+            this.lblPercent2.Size = new System.Drawing.Size(64, 13);
             this.lblPercent2.TabIndex = 7;
             this.lblPercent2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -644,9 +660,9 @@
             // 
             this.lblPercent3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPercent3.AutoSize = true;
-            this.lblPercent3.Location = new System.Drawing.Point(337, 71);
+            this.lblPercent3.Location = new System.Drawing.Point(347, 71);
             this.lblPercent3.Name = "lblPercent3";
-            this.lblPercent3.Size = new System.Drawing.Size(59, 13);
+            this.lblPercent3.Size = new System.Drawing.Size(64, 13);
             this.lblPercent3.TabIndex = 7;
             this.lblPercent3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -654,9 +670,9 @@
             // 
             this.lblPercent4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPercent4.AutoSize = true;
-            this.lblPercent4.Location = new System.Drawing.Point(337, 102);
+            this.lblPercent4.Location = new System.Drawing.Point(347, 102);
             this.lblPercent4.Name = "lblPercent4";
-            this.lblPercent4.Size = new System.Drawing.Size(59, 13);
+            this.lblPercent4.Size = new System.Drawing.Size(64, 13);
             this.lblPercent4.TabIndex = 7;
             this.lblPercent4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -664,9 +680,9 @@
             // 
             this.lblPercent5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPercent5.AutoSize = true;
-            this.lblPercent5.Location = new System.Drawing.Point(337, 133);
+            this.lblPercent5.Location = new System.Drawing.Point(347, 133);
             this.lblPercent5.Name = "lblPercent5";
-            this.lblPercent5.Size = new System.Drawing.Size(59, 13);
+            this.lblPercent5.Size = new System.Drawing.Size(64, 13);
             this.lblPercent5.TabIndex = 7;
             this.lblPercent5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -674,9 +690,9 @@
             // 
             this.lblPercent6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPercent6.AutoSize = true;
-            this.lblPercent6.Location = new System.Drawing.Point(337, 164);
+            this.lblPercent6.Location = new System.Drawing.Point(347, 164);
             this.lblPercent6.Name = "lblPercent6";
-            this.lblPercent6.Size = new System.Drawing.Size(59, 13);
+            this.lblPercent6.Size = new System.Drawing.Size(64, 13);
             this.lblPercent6.TabIndex = 7;
             this.lblPercent6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -684,9 +700,9 @@
             // 
             this.lblPercent7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPercent7.AutoSize = true;
-            this.lblPercent7.Location = new System.Drawing.Point(337, 195);
+            this.lblPercent7.Location = new System.Drawing.Point(347, 195);
             this.lblPercent7.Name = "lblPercent7";
-            this.lblPercent7.Size = new System.Drawing.Size(59, 13);
+            this.lblPercent7.Size = new System.Drawing.Size(64, 13);
             this.lblPercent7.TabIndex = 7;
             this.lblPercent7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -694,9 +710,9 @@
             // 
             this.lblPercent8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPercent8.AutoSize = true;
-            this.lblPercent8.Location = new System.Drawing.Point(337, 226);
+            this.lblPercent8.Location = new System.Drawing.Point(347, 226);
             this.lblPercent8.Name = "lblPercent8";
-            this.lblPercent8.Size = new System.Drawing.Size(59, 13);
+            this.lblPercent8.Size = new System.Drawing.Size(64, 13);
             this.lblPercent8.TabIndex = 7;
             this.lblPercent8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -704,9 +720,9 @@
             // 
             this.lblPercent9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPercent9.AutoSize = true;
-            this.lblPercent9.Location = new System.Drawing.Point(337, 257);
+            this.lblPercent9.Location = new System.Drawing.Point(347, 257);
             this.lblPercent9.Name = "lblPercent9";
-            this.lblPercent9.Size = new System.Drawing.Size(59, 13);
+            this.lblPercent9.Size = new System.Drawing.Size(64, 13);
             this.lblPercent9.TabIndex = 7;
             this.lblPercent9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -741,7 +757,7 @@
             // 
             this.txtGrainWT9.Location = new System.Drawing.Point(205, 252);
             this.txtGrainWT9.Name = "txtGrainWT9";
-            this.txtGrainWT9.Size = new System.Drawing.Size(59, 20);
+            this.txtGrainWT9.Size = new System.Drawing.Size(64, 20);
             this.txtGrainWT9.TabIndex = 18;
             this.txtGrainWT9.TextChanged += new System.EventHandler(this.txtGrainWT9_TextChanged);
             // 
@@ -803,7 +819,7 @@
             // 
             this.txtGrainWT8.Location = new System.Drawing.Point(205, 221);
             this.txtGrainWT8.Name = "txtGrainWT8";
-            this.txtGrainWT8.Size = new System.Drawing.Size(59, 20);
+            this.txtGrainWT8.Size = new System.Drawing.Size(64, 20);
             this.txtGrainWT8.TabIndex = 16;
             this.txtGrainWT8.TextChanged += new System.EventHandler(this.txtGrainWT8_TextChanged);
             // 
@@ -811,7 +827,7 @@
             // 
             this.txtGrainWT4.Location = new System.Drawing.Point(205, 97);
             this.txtGrainWT4.Name = "txtGrainWT4";
-            this.txtGrainWT4.Size = new System.Drawing.Size(59, 20);
+            this.txtGrainWT4.Size = new System.Drawing.Size(64, 20);
             this.txtGrainWT4.TabIndex = 8;
             this.txtGrainWT4.TextChanged += new System.EventHandler(this.txtGrainWT4_TextChanged);
             // 
@@ -819,7 +835,7 @@
             // 
             this.txtGrainWT6.Location = new System.Drawing.Point(205, 159);
             this.txtGrainWT6.Name = "txtGrainWT6";
-            this.txtGrainWT6.Size = new System.Drawing.Size(59, 20);
+            this.txtGrainWT6.Size = new System.Drawing.Size(64, 20);
             this.txtGrainWT6.TabIndex = 12;
             this.txtGrainWT6.TextChanged += new System.EventHandler(this.txtGrainWT6_TextChanged);
             // 
@@ -827,7 +843,7 @@
             // 
             this.txtGrainWT7.Location = new System.Drawing.Point(205, 190);
             this.txtGrainWT7.Name = "txtGrainWT7";
-            this.txtGrainWT7.Size = new System.Drawing.Size(59, 20);
+            this.txtGrainWT7.Size = new System.Drawing.Size(64, 20);
             this.txtGrainWT7.TabIndex = 14;
             this.txtGrainWT7.TextChanged += new System.EventHandler(this.txtGrainWT7_TextChanged);
             // 
@@ -836,7 +852,7 @@
             this.txtGrainWT1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtGrainWT1.Location = new System.Drawing.Point(205, 6);
             this.txtGrainWT1.Name = "txtGrainWT1";
-            this.txtGrainWT1.Size = new System.Drawing.Size(59, 20);
+            this.txtGrainWT1.Size = new System.Drawing.Size(64, 20);
             this.txtGrainWT1.TabIndex = 2;
             this.txtGrainWT1.TextChanged += new System.EventHandler(this.txtGrainWT1_TextChanged_1);
             // 
@@ -844,7 +860,7 @@
             // 
             this.txtGrainWT3.Location = new System.Drawing.Point(205, 66);
             this.txtGrainWT3.Name = "txtGrainWT3";
-            this.txtGrainWT3.Size = new System.Drawing.Size(59, 20);
+            this.txtGrainWT3.Size = new System.Drawing.Size(64, 20);
             this.txtGrainWT3.TabIndex = 6;
             this.txtGrainWT3.TextChanged += new System.EventHandler(this.txtGrainWT3_TextChanged);
             // 
@@ -852,7 +868,7 @@
             // 
             this.txtGrainWT5.Location = new System.Drawing.Point(205, 128);
             this.txtGrainWT5.Name = "txtGrainWT5";
-            this.txtGrainWT5.Size = new System.Drawing.Size(59, 20);
+            this.txtGrainWT5.Size = new System.Drawing.Size(64, 20);
             this.txtGrainWT5.TabIndex = 10;
             this.txtGrainWT5.TextChanged += new System.EventHandler(this.txtGrainWT5_TextChanged);
             // 
@@ -860,7 +876,7 @@
             // 
             this.txtGrainWT2.Location = new System.Drawing.Point(205, 35);
             this.txtGrainWT2.Name = "txtGrainWT2";
-            this.txtGrainWT2.Size = new System.Drawing.Size(59, 20);
+            this.txtGrainWT2.Size = new System.Drawing.Size(64, 20);
             this.txtGrainWT2.TabIndex = 4;
             this.txtGrainWT2.TextChanged += new System.EventHandler(this.txtGrainWT2_TextChanged);
             // 
@@ -868,9 +884,9 @@
             // 
             this.lblAff2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAff2.AutoSize = true;
-            this.lblAff2.Location = new System.Drawing.Point(535, 40);
+            this.lblAff2.Location = new System.Drawing.Point(560, 40);
             this.lblAff2.Name = "lblAff2";
-            this.lblAff2.Size = new System.Drawing.Size(59, 13);
+            this.lblAff2.Size = new System.Drawing.Size(64, 13);
             this.lblAff2.TabIndex = 7;
             this.lblAff2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -878,9 +894,9 @@
             // 
             this.lblDP2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDP2.AutoSize = true;
-            this.lblDP2.Location = new System.Drawing.Point(667, 40);
+            this.lblDP2.Location = new System.Drawing.Point(702, 40);
             this.lblDP2.Name = "lblDP2";
-            this.lblDP2.Size = new System.Drawing.Size(59, 13);
+            this.lblDP2.Size = new System.Drawing.Size(64, 13);
             this.lblDP2.TabIndex = 7;
             this.lblDP2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -888,9 +904,9 @@
             // 
             this.lblPoi2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPoi2.AutoSize = true;
-            this.lblPoi2.Location = new System.Drawing.Point(733, 40);
+            this.lblPoi2.Location = new System.Drawing.Point(773, 40);
             this.lblPoi2.Name = "lblPoi2";
-            this.lblPoi2.Size = new System.Drawing.Size(59, 13);
+            this.lblPoi2.Size = new System.Drawing.Size(64, 13);
             this.lblPoi2.TabIndex = 7;
             this.lblPoi2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -898,9 +914,9 @@
             // 
             this.lblFer2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFer2.AutoSize = true;
-            this.lblFer2.Location = new System.Drawing.Point(799, 40);
+            this.lblFer2.Location = new System.Drawing.Point(844, 40);
             this.lblFer2.Name = "lblFer2";
-            this.lblFer2.Size = new System.Drawing.Size(59, 13);
+            this.lblFer2.Size = new System.Drawing.Size(64, 13);
             this.lblFer2.TabIndex = 7;
             this.lblFer2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -908,9 +924,9 @@
             // 
             this.lblCon2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCon2.AutoSize = true;
-            this.lblCon2.Location = new System.Drawing.Point(865, 40);
+            this.lblCon2.Location = new System.Drawing.Point(915, 40);
             this.lblCon2.Name = "lblCon2";
-            this.lblCon2.Size = new System.Drawing.Size(59, 13);
+            this.lblCon2.Size = new System.Drawing.Size(64, 13);
             this.lblCon2.TabIndex = 7;
             this.lblCon2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -918,9 +934,9 @@
             // 
             this.lblWA2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblWA2.AutoSize = true;
-            this.lblWA2.Location = new System.Drawing.Point(931, 40);
+            this.lblWA2.Location = new System.Drawing.Point(986, 40);
             this.lblWA2.Name = "lblWA2";
-            this.lblWA2.Size = new System.Drawing.Size(59, 13);
+            this.lblWA2.Size = new System.Drawing.Size(64, 13);
             this.lblWA2.TabIndex = 7;
             this.lblWA2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -928,9 +944,9 @@
             // 
             this.lblOGC2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblOGC2.AutoSize = true;
-            this.lblOGC2.Location = new System.Drawing.Point(997, 40);
+            this.lblOGC2.Location = new System.Drawing.Point(1057, 40);
             this.lblOGC2.Name = "lblOGC2";
-            this.lblOGC2.Size = new System.Drawing.Size(59, 13);
+            this.lblOGC2.Size = new System.Drawing.Size(64, 13);
             this.lblOGC2.TabIndex = 7;
             this.lblOGC2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -938,9 +954,9 @@
             // 
             this.lblFGC2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFGC2.AutoSize = true;
-            this.lblFGC2.Location = new System.Drawing.Point(1063, 40);
+            this.lblFGC2.Location = new System.Drawing.Point(1128, 40);
             this.lblFGC2.Name = "lblFGC2";
-            this.lblFGC2.Size = new System.Drawing.Size(59, 13);
+            this.lblFGC2.Size = new System.Drawing.Size(64, 13);
             this.lblFGC2.TabIndex = 7;
             this.lblFGC2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -948,9 +964,9 @@
             // 
             this.lblLbGrain3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLbGrain3.AutoSize = true;
-            this.lblLbGrain3.Location = new System.Drawing.Point(271, 71);
+            this.lblLbGrain3.Location = new System.Drawing.Point(276, 71);
             this.lblLbGrain3.Name = "lblLbGrain3";
-            this.lblLbGrain3.Size = new System.Drawing.Size(59, 13);
+            this.lblLbGrain3.Size = new System.Drawing.Size(64, 13);
             this.lblLbGrain3.TabIndex = 7;
             this.lblLbGrain3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -958,9 +974,9 @@
             // 
             this.lblLbGrain4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLbGrain4.AutoSize = true;
-            this.lblLbGrain4.Location = new System.Drawing.Point(271, 102);
+            this.lblLbGrain4.Location = new System.Drawing.Point(276, 102);
             this.lblLbGrain4.Name = "lblLbGrain4";
-            this.lblLbGrain4.Size = new System.Drawing.Size(59, 13);
+            this.lblLbGrain4.Size = new System.Drawing.Size(64, 13);
             this.lblLbGrain4.TabIndex = 7;
             this.lblLbGrain4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -968,9 +984,9 @@
             // 
             this.lblLbGrain5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLbGrain5.AutoSize = true;
-            this.lblLbGrain5.Location = new System.Drawing.Point(271, 133);
+            this.lblLbGrain5.Location = new System.Drawing.Point(276, 133);
             this.lblLbGrain5.Name = "lblLbGrain5";
-            this.lblLbGrain5.Size = new System.Drawing.Size(59, 13);
+            this.lblLbGrain5.Size = new System.Drawing.Size(64, 13);
             this.lblLbGrain5.TabIndex = 7;
             this.lblLbGrain5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -978,9 +994,9 @@
             // 
             this.lblLbGrain6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLbGrain6.AutoSize = true;
-            this.lblLbGrain6.Location = new System.Drawing.Point(271, 164);
+            this.lblLbGrain6.Location = new System.Drawing.Point(276, 164);
             this.lblLbGrain6.Name = "lblLbGrain6";
-            this.lblLbGrain6.Size = new System.Drawing.Size(59, 13);
+            this.lblLbGrain6.Size = new System.Drawing.Size(64, 13);
             this.lblLbGrain6.TabIndex = 7;
             this.lblLbGrain6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -988,9 +1004,9 @@
             // 
             this.lblLbGrain7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLbGrain7.AutoSize = true;
-            this.lblLbGrain7.Location = new System.Drawing.Point(271, 195);
+            this.lblLbGrain7.Location = new System.Drawing.Point(276, 195);
             this.lblLbGrain7.Name = "lblLbGrain7";
-            this.lblLbGrain7.Size = new System.Drawing.Size(59, 13);
+            this.lblLbGrain7.Size = new System.Drawing.Size(64, 13);
             this.lblLbGrain7.TabIndex = 7;
             this.lblLbGrain7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -998,9 +1014,9 @@
             // 
             this.lblLbGrain8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLbGrain8.AutoSize = true;
-            this.lblLbGrain8.Location = new System.Drawing.Point(271, 226);
+            this.lblLbGrain8.Location = new System.Drawing.Point(276, 226);
             this.lblLbGrain8.Name = "lblLbGrain8";
-            this.lblLbGrain8.Size = new System.Drawing.Size(59, 13);
+            this.lblLbGrain8.Size = new System.Drawing.Size(64, 13);
             this.lblLbGrain8.TabIndex = 7;
             this.lblLbGrain8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1008,9 +1024,9 @@
             // 
             this.lblLbGrain9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLbGrain9.AutoSize = true;
-            this.lblLbGrain9.Location = new System.Drawing.Point(271, 257);
+            this.lblLbGrain9.Location = new System.Drawing.Point(276, 257);
             this.lblLbGrain9.Name = "lblLbGrain9";
-            this.lblLbGrain9.Size = new System.Drawing.Size(59, 13);
+            this.lblLbGrain9.Size = new System.Drawing.Size(64, 13);
             this.lblLbGrain9.TabIndex = 7;
             this.lblLbGrain9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1018,9 +1034,9 @@
             // 
             this.lblPPG3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPPG3.AutoSize = true;
-            this.lblPPG3.Location = new System.Drawing.Point(403, 71);
+            this.lblPPG3.Location = new System.Drawing.Point(418, 71);
             this.lblPPG3.Name = "lblPPG3";
-            this.lblPPG3.Size = new System.Drawing.Size(59, 13);
+            this.lblPPG3.Size = new System.Drawing.Size(64, 13);
             this.lblPPG3.TabIndex = 9;
             this.lblPPG3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1028,9 +1044,9 @@
             // 
             this.lblAttn3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAttn3.AutoSize = true;
-            this.lblAttn3.Location = new System.Drawing.Point(469, 71);
+            this.lblAttn3.Location = new System.Drawing.Point(489, 71);
             this.lblAttn3.Name = "lblAttn3";
-            this.lblAttn3.Size = new System.Drawing.Size(59, 13);
+            this.lblAttn3.Size = new System.Drawing.Size(64, 13);
             this.lblAttn3.TabIndex = 7;
             this.lblAttn3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1038,9 +1054,9 @@
             // 
             this.lblAff3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAff3.AutoSize = true;
-            this.lblAff3.Location = new System.Drawing.Point(535, 71);
+            this.lblAff3.Location = new System.Drawing.Point(560, 71);
             this.lblAff3.Name = "lblAff3";
-            this.lblAff3.Size = new System.Drawing.Size(59, 13);
+            this.lblAff3.Size = new System.Drawing.Size(64, 13);
             this.lblAff3.TabIndex = 7;
             this.lblAff3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1048,9 +1064,9 @@
             // 
             this.lblLov3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLov3.AutoSize = true;
-            this.lblLov3.Location = new System.Drawing.Point(601, 71);
+            this.lblLov3.Location = new System.Drawing.Point(631, 71);
             this.lblLov3.Name = "lblLov3";
-            this.lblLov3.Size = new System.Drawing.Size(59, 13);
+            this.lblLov3.Size = new System.Drawing.Size(64, 13);
             this.lblLov3.TabIndex = 7;
             this.lblLov3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1058,9 +1074,9 @@
             // 
             this.lblDP3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDP3.AutoSize = true;
-            this.lblDP3.Location = new System.Drawing.Point(667, 71);
+            this.lblDP3.Location = new System.Drawing.Point(702, 71);
             this.lblDP3.Name = "lblDP3";
-            this.lblDP3.Size = new System.Drawing.Size(59, 13);
+            this.lblDP3.Size = new System.Drawing.Size(64, 13);
             this.lblDP3.TabIndex = 7;
             this.lblDP3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1068,9 +1084,9 @@
             // 
             this.lblPoi3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPoi3.AutoSize = true;
-            this.lblPoi3.Location = new System.Drawing.Point(733, 71);
+            this.lblPoi3.Location = new System.Drawing.Point(773, 71);
             this.lblPoi3.Name = "lblPoi3";
-            this.lblPoi3.Size = new System.Drawing.Size(59, 13);
+            this.lblPoi3.Size = new System.Drawing.Size(64, 13);
             this.lblPoi3.TabIndex = 7;
             this.lblPoi3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1078,9 +1094,9 @@
             // 
             this.lblFer3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFer3.AutoSize = true;
-            this.lblFer3.Location = new System.Drawing.Point(799, 71);
+            this.lblFer3.Location = new System.Drawing.Point(844, 71);
             this.lblFer3.Name = "lblFer3";
-            this.lblFer3.Size = new System.Drawing.Size(59, 13);
+            this.lblFer3.Size = new System.Drawing.Size(64, 13);
             this.lblFer3.TabIndex = 7;
             this.lblFer3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1088,9 +1104,9 @@
             // 
             this.lblCon3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCon3.AutoSize = true;
-            this.lblCon3.Location = new System.Drawing.Point(865, 71);
+            this.lblCon3.Location = new System.Drawing.Point(915, 71);
             this.lblCon3.Name = "lblCon3";
-            this.lblCon3.Size = new System.Drawing.Size(59, 13);
+            this.lblCon3.Size = new System.Drawing.Size(64, 13);
             this.lblCon3.TabIndex = 7;
             this.lblCon3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1098,9 +1114,9 @@
             // 
             this.lblWA3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblWA3.AutoSize = true;
-            this.lblWA3.Location = new System.Drawing.Point(931, 71);
+            this.lblWA3.Location = new System.Drawing.Point(986, 71);
             this.lblWA3.Name = "lblWA3";
-            this.lblWA3.Size = new System.Drawing.Size(59, 13);
+            this.lblWA3.Size = new System.Drawing.Size(64, 13);
             this.lblWA3.TabIndex = 7;
             this.lblWA3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1108,9 +1124,9 @@
             // 
             this.lblOGC3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblOGC3.AutoSize = true;
-            this.lblOGC3.Location = new System.Drawing.Point(997, 71);
+            this.lblOGC3.Location = new System.Drawing.Point(1057, 71);
             this.lblOGC3.Name = "lblOGC3";
-            this.lblOGC3.Size = new System.Drawing.Size(59, 13);
+            this.lblOGC3.Size = new System.Drawing.Size(64, 13);
             this.lblOGC3.TabIndex = 7;
             this.lblOGC3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1118,9 +1134,9 @@
             // 
             this.lblFGC3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFGC3.AutoSize = true;
-            this.lblFGC3.Location = new System.Drawing.Point(1063, 71);
+            this.lblFGC3.Location = new System.Drawing.Point(1128, 71);
             this.lblFGC3.Name = "lblFGC3";
-            this.lblFGC3.Size = new System.Drawing.Size(59, 13);
+            this.lblFGC3.Size = new System.Drawing.Size(64, 13);
             this.lblFGC3.TabIndex = 7;
             this.lblFGC3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1128,9 +1144,9 @@
             // 
             this.lblPPG4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPPG4.AutoSize = true;
-            this.lblPPG4.Location = new System.Drawing.Point(403, 102);
+            this.lblPPG4.Location = new System.Drawing.Point(418, 102);
             this.lblPPG4.Name = "lblPPG4";
-            this.lblPPG4.Size = new System.Drawing.Size(59, 13);
+            this.lblPPG4.Size = new System.Drawing.Size(64, 13);
             this.lblPPG4.TabIndex = 9;
             this.lblPPG4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1138,9 +1154,9 @@
             // 
             this.lblAttn4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAttn4.AutoSize = true;
-            this.lblAttn4.Location = new System.Drawing.Point(469, 102);
+            this.lblAttn4.Location = new System.Drawing.Point(489, 102);
             this.lblAttn4.Name = "lblAttn4";
-            this.lblAttn4.Size = new System.Drawing.Size(59, 13);
+            this.lblAttn4.Size = new System.Drawing.Size(64, 13);
             this.lblAttn4.TabIndex = 7;
             this.lblAttn4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1148,9 +1164,9 @@
             // 
             this.lblAff4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAff4.AutoSize = true;
-            this.lblAff4.Location = new System.Drawing.Point(535, 102);
+            this.lblAff4.Location = new System.Drawing.Point(560, 102);
             this.lblAff4.Name = "lblAff4";
-            this.lblAff4.Size = new System.Drawing.Size(59, 13);
+            this.lblAff4.Size = new System.Drawing.Size(64, 13);
             this.lblAff4.TabIndex = 7;
             this.lblAff4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1158,9 +1174,9 @@
             // 
             this.lblLov4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLov4.AutoSize = true;
-            this.lblLov4.Location = new System.Drawing.Point(601, 102);
+            this.lblLov4.Location = new System.Drawing.Point(631, 102);
             this.lblLov4.Name = "lblLov4";
-            this.lblLov4.Size = new System.Drawing.Size(59, 13);
+            this.lblLov4.Size = new System.Drawing.Size(64, 13);
             this.lblLov4.TabIndex = 7;
             this.lblLov4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1168,9 +1184,9 @@
             // 
             this.lblDP4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDP4.AutoSize = true;
-            this.lblDP4.Location = new System.Drawing.Point(667, 102);
+            this.lblDP4.Location = new System.Drawing.Point(702, 102);
             this.lblDP4.Name = "lblDP4";
-            this.lblDP4.Size = new System.Drawing.Size(59, 13);
+            this.lblDP4.Size = new System.Drawing.Size(64, 13);
             this.lblDP4.TabIndex = 7;
             this.lblDP4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1178,9 +1194,9 @@
             // 
             this.lblPoi4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPoi4.AutoSize = true;
-            this.lblPoi4.Location = new System.Drawing.Point(733, 102);
+            this.lblPoi4.Location = new System.Drawing.Point(773, 102);
             this.lblPoi4.Name = "lblPoi4";
-            this.lblPoi4.Size = new System.Drawing.Size(59, 13);
+            this.lblPoi4.Size = new System.Drawing.Size(64, 13);
             this.lblPoi4.TabIndex = 7;
             this.lblPoi4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1188,9 +1204,9 @@
             // 
             this.lblFer4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFer4.AutoSize = true;
-            this.lblFer4.Location = new System.Drawing.Point(799, 102);
+            this.lblFer4.Location = new System.Drawing.Point(844, 102);
             this.lblFer4.Name = "lblFer4";
-            this.lblFer4.Size = new System.Drawing.Size(59, 13);
+            this.lblFer4.Size = new System.Drawing.Size(64, 13);
             this.lblFer4.TabIndex = 7;
             this.lblFer4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1198,9 +1214,9 @@
             // 
             this.lblCon4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCon4.AutoSize = true;
-            this.lblCon4.Location = new System.Drawing.Point(865, 102);
+            this.lblCon4.Location = new System.Drawing.Point(915, 102);
             this.lblCon4.Name = "lblCon4";
-            this.lblCon4.Size = new System.Drawing.Size(59, 13);
+            this.lblCon4.Size = new System.Drawing.Size(64, 13);
             this.lblCon4.TabIndex = 7;
             this.lblCon4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1208,9 +1224,9 @@
             // 
             this.lblWA4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblWA4.AutoSize = true;
-            this.lblWA4.Location = new System.Drawing.Point(931, 102);
+            this.lblWA4.Location = new System.Drawing.Point(986, 102);
             this.lblWA4.Name = "lblWA4";
-            this.lblWA4.Size = new System.Drawing.Size(59, 13);
+            this.lblWA4.Size = new System.Drawing.Size(64, 13);
             this.lblWA4.TabIndex = 7;
             this.lblWA4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1218,9 +1234,9 @@
             // 
             this.lblOGC4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblOGC4.AutoSize = true;
-            this.lblOGC4.Location = new System.Drawing.Point(997, 102);
+            this.lblOGC4.Location = new System.Drawing.Point(1057, 102);
             this.lblOGC4.Name = "lblOGC4";
-            this.lblOGC4.Size = new System.Drawing.Size(59, 13);
+            this.lblOGC4.Size = new System.Drawing.Size(64, 13);
             this.lblOGC4.TabIndex = 7;
             this.lblOGC4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1228,9 +1244,9 @@
             // 
             this.lblFGC4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFGC4.AutoSize = true;
-            this.lblFGC4.Location = new System.Drawing.Point(1063, 102);
+            this.lblFGC4.Location = new System.Drawing.Point(1128, 102);
             this.lblFGC4.Name = "lblFGC4";
-            this.lblFGC4.Size = new System.Drawing.Size(59, 13);
+            this.lblFGC4.Size = new System.Drawing.Size(64, 13);
             this.lblFGC4.TabIndex = 7;
             this.lblFGC4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1238,9 +1254,9 @@
             // 
             this.lblPPG5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPPG5.AutoSize = true;
-            this.lblPPG5.Location = new System.Drawing.Point(403, 133);
+            this.lblPPG5.Location = new System.Drawing.Point(418, 133);
             this.lblPPG5.Name = "lblPPG5";
-            this.lblPPG5.Size = new System.Drawing.Size(59, 13);
+            this.lblPPG5.Size = new System.Drawing.Size(64, 13);
             this.lblPPG5.TabIndex = 9;
             this.lblPPG5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1248,9 +1264,9 @@
             // 
             this.lblPPG6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPPG6.AutoSize = true;
-            this.lblPPG6.Location = new System.Drawing.Point(403, 164);
+            this.lblPPG6.Location = new System.Drawing.Point(418, 164);
             this.lblPPG6.Name = "lblPPG6";
-            this.lblPPG6.Size = new System.Drawing.Size(59, 13);
+            this.lblPPG6.Size = new System.Drawing.Size(64, 13);
             this.lblPPG6.TabIndex = 9;
             this.lblPPG6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1258,9 +1274,9 @@
             // 
             this.lblPPG7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPPG7.AutoSize = true;
-            this.lblPPG7.Location = new System.Drawing.Point(403, 195);
+            this.lblPPG7.Location = new System.Drawing.Point(418, 195);
             this.lblPPG7.Name = "lblPPG7";
-            this.lblPPG7.Size = new System.Drawing.Size(59, 13);
+            this.lblPPG7.Size = new System.Drawing.Size(64, 13);
             this.lblPPG7.TabIndex = 9;
             this.lblPPG7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1268,9 +1284,9 @@
             // 
             this.lblPPG8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPPG8.AutoSize = true;
-            this.lblPPG8.Location = new System.Drawing.Point(403, 226);
+            this.lblPPG8.Location = new System.Drawing.Point(418, 226);
             this.lblPPG8.Name = "lblPPG8";
-            this.lblPPG8.Size = new System.Drawing.Size(59, 13);
+            this.lblPPG8.Size = new System.Drawing.Size(64, 13);
             this.lblPPG8.TabIndex = 9;
             this.lblPPG8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1278,9 +1294,9 @@
             // 
             this.lblPPG9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPPG9.AutoSize = true;
-            this.lblPPG9.Location = new System.Drawing.Point(403, 257);
+            this.lblPPG9.Location = new System.Drawing.Point(418, 257);
             this.lblPPG9.Name = "lblPPG9";
-            this.lblPPG9.Size = new System.Drawing.Size(59, 13);
+            this.lblPPG9.Size = new System.Drawing.Size(64, 13);
             this.lblPPG9.TabIndex = 9;
             this.lblPPG9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1288,9 +1304,9 @@
             // 
             this.lblAttn5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAttn5.AutoSize = true;
-            this.lblAttn5.Location = new System.Drawing.Point(469, 133);
+            this.lblAttn5.Location = new System.Drawing.Point(489, 133);
             this.lblAttn5.Name = "lblAttn5";
-            this.lblAttn5.Size = new System.Drawing.Size(59, 13);
+            this.lblAttn5.Size = new System.Drawing.Size(64, 13);
             this.lblAttn5.TabIndex = 7;
             this.lblAttn5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1298,9 +1314,9 @@
             // 
             this.lblAttn6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAttn6.AutoSize = true;
-            this.lblAttn6.Location = new System.Drawing.Point(469, 164);
+            this.lblAttn6.Location = new System.Drawing.Point(489, 164);
             this.lblAttn6.Name = "lblAttn6";
-            this.lblAttn6.Size = new System.Drawing.Size(59, 13);
+            this.lblAttn6.Size = new System.Drawing.Size(64, 13);
             this.lblAttn6.TabIndex = 7;
             this.lblAttn6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1308,9 +1324,9 @@
             // 
             this.lblAttn7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAttn7.AutoSize = true;
-            this.lblAttn7.Location = new System.Drawing.Point(469, 195);
+            this.lblAttn7.Location = new System.Drawing.Point(489, 195);
             this.lblAttn7.Name = "lblAttn7";
-            this.lblAttn7.Size = new System.Drawing.Size(59, 13);
+            this.lblAttn7.Size = new System.Drawing.Size(64, 13);
             this.lblAttn7.TabIndex = 7;
             this.lblAttn7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1318,9 +1334,9 @@
             // 
             this.lblAttn8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAttn8.AutoSize = true;
-            this.lblAttn8.Location = new System.Drawing.Point(469, 226);
+            this.lblAttn8.Location = new System.Drawing.Point(489, 226);
             this.lblAttn8.Name = "lblAttn8";
-            this.lblAttn8.Size = new System.Drawing.Size(59, 13);
+            this.lblAttn8.Size = new System.Drawing.Size(64, 13);
             this.lblAttn8.TabIndex = 7;
             this.lblAttn8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1328,9 +1344,9 @@
             // 
             this.lblAttn9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAttn9.AutoSize = true;
-            this.lblAttn9.Location = new System.Drawing.Point(469, 257);
+            this.lblAttn9.Location = new System.Drawing.Point(489, 257);
             this.lblAttn9.Name = "lblAttn9";
-            this.lblAttn9.Size = new System.Drawing.Size(59, 13);
+            this.lblAttn9.Size = new System.Drawing.Size(64, 13);
             this.lblAttn9.TabIndex = 7;
             this.lblAttn9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1338,9 +1354,9 @@
             // 
             this.lblAff5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAff5.AutoSize = true;
-            this.lblAff5.Location = new System.Drawing.Point(535, 133);
+            this.lblAff5.Location = new System.Drawing.Point(560, 133);
             this.lblAff5.Name = "lblAff5";
-            this.lblAff5.Size = new System.Drawing.Size(59, 13);
+            this.lblAff5.Size = new System.Drawing.Size(64, 13);
             this.lblAff5.TabIndex = 7;
             this.lblAff5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1348,9 +1364,9 @@
             // 
             this.lblAff6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAff6.AutoSize = true;
-            this.lblAff6.Location = new System.Drawing.Point(535, 164);
+            this.lblAff6.Location = new System.Drawing.Point(560, 164);
             this.lblAff6.Name = "lblAff6";
-            this.lblAff6.Size = new System.Drawing.Size(59, 13);
+            this.lblAff6.Size = new System.Drawing.Size(64, 13);
             this.lblAff6.TabIndex = 7;
             this.lblAff6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1358,9 +1374,9 @@
             // 
             this.lblAff7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAff7.AutoSize = true;
-            this.lblAff7.Location = new System.Drawing.Point(535, 195);
+            this.lblAff7.Location = new System.Drawing.Point(560, 195);
             this.lblAff7.Name = "lblAff7";
-            this.lblAff7.Size = new System.Drawing.Size(59, 13);
+            this.lblAff7.Size = new System.Drawing.Size(64, 13);
             this.lblAff7.TabIndex = 7;
             this.lblAff7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1368,9 +1384,9 @@
             // 
             this.lblAff8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAff8.AutoSize = true;
-            this.lblAff8.Location = new System.Drawing.Point(535, 226);
+            this.lblAff8.Location = new System.Drawing.Point(560, 226);
             this.lblAff8.Name = "lblAff8";
-            this.lblAff8.Size = new System.Drawing.Size(59, 13);
+            this.lblAff8.Size = new System.Drawing.Size(64, 13);
             this.lblAff8.TabIndex = 7;
             this.lblAff8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1378,9 +1394,9 @@
             // 
             this.lblAff9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAff9.AutoSize = true;
-            this.lblAff9.Location = new System.Drawing.Point(535, 257);
+            this.lblAff9.Location = new System.Drawing.Point(560, 257);
             this.lblAff9.Name = "lblAff9";
-            this.lblAff9.Size = new System.Drawing.Size(59, 13);
+            this.lblAff9.Size = new System.Drawing.Size(64, 13);
             this.lblAff9.TabIndex = 7;
             this.lblAff9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1388,9 +1404,9 @@
             // 
             this.lblLov5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLov5.AutoSize = true;
-            this.lblLov5.Location = new System.Drawing.Point(601, 133);
+            this.lblLov5.Location = new System.Drawing.Point(631, 133);
             this.lblLov5.Name = "lblLov5";
-            this.lblLov5.Size = new System.Drawing.Size(59, 13);
+            this.lblLov5.Size = new System.Drawing.Size(64, 13);
             this.lblLov5.TabIndex = 7;
             this.lblLov5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1398,9 +1414,9 @@
             // 
             this.lblLov6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLov6.AutoSize = true;
-            this.lblLov6.Location = new System.Drawing.Point(601, 164);
+            this.lblLov6.Location = new System.Drawing.Point(631, 164);
             this.lblLov6.Name = "lblLov6";
-            this.lblLov6.Size = new System.Drawing.Size(59, 13);
+            this.lblLov6.Size = new System.Drawing.Size(64, 13);
             this.lblLov6.TabIndex = 7;
             this.lblLov6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1408,9 +1424,9 @@
             // 
             this.lblLov7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLov7.AutoSize = true;
-            this.lblLov7.Location = new System.Drawing.Point(601, 195);
+            this.lblLov7.Location = new System.Drawing.Point(631, 195);
             this.lblLov7.Name = "lblLov7";
-            this.lblLov7.Size = new System.Drawing.Size(59, 13);
+            this.lblLov7.Size = new System.Drawing.Size(64, 13);
             this.lblLov7.TabIndex = 7;
             this.lblLov7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1418,9 +1434,9 @@
             // 
             this.lblLov8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLov8.AutoSize = true;
-            this.lblLov8.Location = new System.Drawing.Point(601, 226);
+            this.lblLov8.Location = new System.Drawing.Point(631, 226);
             this.lblLov8.Name = "lblLov8";
-            this.lblLov8.Size = new System.Drawing.Size(59, 13);
+            this.lblLov8.Size = new System.Drawing.Size(64, 13);
             this.lblLov8.TabIndex = 7;
             this.lblLov8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1428,9 +1444,9 @@
             // 
             this.lblLov9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLov9.AutoSize = true;
-            this.lblLov9.Location = new System.Drawing.Point(601, 257);
+            this.lblLov9.Location = new System.Drawing.Point(631, 257);
             this.lblLov9.Name = "lblLov9";
-            this.lblLov9.Size = new System.Drawing.Size(59, 13);
+            this.lblLov9.Size = new System.Drawing.Size(64, 13);
             this.lblLov9.TabIndex = 7;
             this.lblLov9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1438,9 +1454,9 @@
             // 
             this.lblDP5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDP5.AutoSize = true;
-            this.lblDP5.Location = new System.Drawing.Point(667, 133);
+            this.lblDP5.Location = new System.Drawing.Point(702, 133);
             this.lblDP5.Name = "lblDP5";
-            this.lblDP5.Size = new System.Drawing.Size(59, 13);
+            this.lblDP5.Size = new System.Drawing.Size(64, 13);
             this.lblDP5.TabIndex = 7;
             this.lblDP5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1448,9 +1464,9 @@
             // 
             this.lblDP6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDP6.AutoSize = true;
-            this.lblDP6.Location = new System.Drawing.Point(667, 164);
+            this.lblDP6.Location = new System.Drawing.Point(702, 164);
             this.lblDP6.Name = "lblDP6";
-            this.lblDP6.Size = new System.Drawing.Size(59, 13);
+            this.lblDP6.Size = new System.Drawing.Size(64, 13);
             this.lblDP6.TabIndex = 7;
             this.lblDP6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1458,9 +1474,9 @@
             // 
             this.lblDP7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDP7.AutoSize = true;
-            this.lblDP7.Location = new System.Drawing.Point(667, 195);
+            this.lblDP7.Location = new System.Drawing.Point(702, 195);
             this.lblDP7.Name = "lblDP7";
-            this.lblDP7.Size = new System.Drawing.Size(59, 13);
+            this.lblDP7.Size = new System.Drawing.Size(64, 13);
             this.lblDP7.TabIndex = 7;
             this.lblDP7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1468,9 +1484,9 @@
             // 
             this.lblDP8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDP8.AutoSize = true;
-            this.lblDP8.Location = new System.Drawing.Point(667, 226);
+            this.lblDP8.Location = new System.Drawing.Point(702, 226);
             this.lblDP8.Name = "lblDP8";
-            this.lblDP8.Size = new System.Drawing.Size(59, 13);
+            this.lblDP8.Size = new System.Drawing.Size(64, 13);
             this.lblDP8.TabIndex = 7;
             this.lblDP8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1478,9 +1494,9 @@
             // 
             this.lblDP9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDP9.AutoSize = true;
-            this.lblDP9.Location = new System.Drawing.Point(667, 257);
+            this.lblDP9.Location = new System.Drawing.Point(702, 257);
             this.lblDP9.Name = "lblDP9";
-            this.lblDP9.Size = new System.Drawing.Size(59, 13);
+            this.lblDP9.Size = new System.Drawing.Size(64, 13);
             this.lblDP9.TabIndex = 7;
             this.lblDP9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1488,9 +1504,9 @@
             // 
             this.lblPoi5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPoi5.AutoSize = true;
-            this.lblPoi5.Location = new System.Drawing.Point(733, 133);
+            this.lblPoi5.Location = new System.Drawing.Point(773, 133);
             this.lblPoi5.Name = "lblPoi5";
-            this.lblPoi5.Size = new System.Drawing.Size(59, 13);
+            this.lblPoi5.Size = new System.Drawing.Size(64, 13);
             this.lblPoi5.TabIndex = 7;
             this.lblPoi5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1498,9 +1514,9 @@
             // 
             this.lblPoi6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPoi6.AutoSize = true;
-            this.lblPoi6.Location = new System.Drawing.Point(733, 164);
+            this.lblPoi6.Location = new System.Drawing.Point(773, 164);
             this.lblPoi6.Name = "lblPoi6";
-            this.lblPoi6.Size = new System.Drawing.Size(59, 13);
+            this.lblPoi6.Size = new System.Drawing.Size(64, 13);
             this.lblPoi6.TabIndex = 7;
             this.lblPoi6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1508,9 +1524,9 @@
             // 
             this.lblPoi7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPoi7.AutoSize = true;
-            this.lblPoi7.Location = new System.Drawing.Point(733, 195);
+            this.lblPoi7.Location = new System.Drawing.Point(773, 195);
             this.lblPoi7.Name = "lblPoi7";
-            this.lblPoi7.Size = new System.Drawing.Size(59, 13);
+            this.lblPoi7.Size = new System.Drawing.Size(64, 13);
             this.lblPoi7.TabIndex = 7;
             this.lblPoi7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1518,9 +1534,9 @@
             // 
             this.lblPoi8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPoi8.AutoSize = true;
-            this.lblPoi8.Location = new System.Drawing.Point(733, 226);
+            this.lblPoi8.Location = new System.Drawing.Point(773, 226);
             this.lblPoi8.Name = "lblPoi8";
-            this.lblPoi8.Size = new System.Drawing.Size(59, 13);
+            this.lblPoi8.Size = new System.Drawing.Size(64, 13);
             this.lblPoi8.TabIndex = 7;
             this.lblPoi8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1528,9 +1544,9 @@
             // 
             this.lblPoi9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPoi9.AutoSize = true;
-            this.lblPoi9.Location = new System.Drawing.Point(733, 257);
+            this.lblPoi9.Location = new System.Drawing.Point(773, 257);
             this.lblPoi9.Name = "lblPoi9";
-            this.lblPoi9.Size = new System.Drawing.Size(59, 13);
+            this.lblPoi9.Size = new System.Drawing.Size(64, 13);
             this.lblPoi9.TabIndex = 7;
             this.lblPoi9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1538,9 +1554,9 @@
             // 
             this.lblFer5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFer5.AutoSize = true;
-            this.lblFer5.Location = new System.Drawing.Point(799, 133);
+            this.lblFer5.Location = new System.Drawing.Point(844, 133);
             this.lblFer5.Name = "lblFer5";
-            this.lblFer5.Size = new System.Drawing.Size(59, 13);
+            this.lblFer5.Size = new System.Drawing.Size(64, 13);
             this.lblFer5.TabIndex = 7;
             this.lblFer5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1548,9 +1564,9 @@
             // 
             this.lblFer6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFer6.AutoSize = true;
-            this.lblFer6.Location = new System.Drawing.Point(799, 164);
+            this.lblFer6.Location = new System.Drawing.Point(844, 164);
             this.lblFer6.Name = "lblFer6";
-            this.lblFer6.Size = new System.Drawing.Size(59, 13);
+            this.lblFer6.Size = new System.Drawing.Size(64, 13);
             this.lblFer6.TabIndex = 7;
             this.lblFer6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1558,9 +1574,9 @@
             // 
             this.lblFer7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFer7.AutoSize = true;
-            this.lblFer7.Location = new System.Drawing.Point(799, 195);
+            this.lblFer7.Location = new System.Drawing.Point(844, 195);
             this.lblFer7.Name = "lblFer7";
-            this.lblFer7.Size = new System.Drawing.Size(59, 13);
+            this.lblFer7.Size = new System.Drawing.Size(64, 13);
             this.lblFer7.TabIndex = 7;
             this.lblFer7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1568,9 +1584,9 @@
             // 
             this.lblFer8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFer8.AutoSize = true;
-            this.lblFer8.Location = new System.Drawing.Point(799, 226);
+            this.lblFer8.Location = new System.Drawing.Point(844, 226);
             this.lblFer8.Name = "lblFer8";
-            this.lblFer8.Size = new System.Drawing.Size(59, 13);
+            this.lblFer8.Size = new System.Drawing.Size(64, 13);
             this.lblFer8.TabIndex = 7;
             this.lblFer8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1578,9 +1594,9 @@
             // 
             this.lblFer9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFer9.AutoSize = true;
-            this.lblFer9.Location = new System.Drawing.Point(799, 257);
+            this.lblFer9.Location = new System.Drawing.Point(844, 257);
             this.lblFer9.Name = "lblFer9";
-            this.lblFer9.Size = new System.Drawing.Size(59, 13);
+            this.lblFer9.Size = new System.Drawing.Size(64, 13);
             this.lblFer9.TabIndex = 7;
             this.lblFer9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1588,9 +1604,9 @@
             // 
             this.lblCon5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCon5.AutoSize = true;
-            this.lblCon5.Location = new System.Drawing.Point(865, 133);
+            this.lblCon5.Location = new System.Drawing.Point(915, 133);
             this.lblCon5.Name = "lblCon5";
-            this.lblCon5.Size = new System.Drawing.Size(59, 13);
+            this.lblCon5.Size = new System.Drawing.Size(64, 13);
             this.lblCon5.TabIndex = 7;
             this.lblCon5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1598,9 +1614,9 @@
             // 
             this.lblCon6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCon6.AutoSize = true;
-            this.lblCon6.Location = new System.Drawing.Point(865, 164);
+            this.lblCon6.Location = new System.Drawing.Point(915, 164);
             this.lblCon6.Name = "lblCon6";
-            this.lblCon6.Size = new System.Drawing.Size(59, 13);
+            this.lblCon6.Size = new System.Drawing.Size(64, 13);
             this.lblCon6.TabIndex = 7;
             this.lblCon6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1608,9 +1624,9 @@
             // 
             this.lblCon7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCon7.AutoSize = true;
-            this.lblCon7.Location = new System.Drawing.Point(865, 195);
+            this.lblCon7.Location = new System.Drawing.Point(915, 195);
             this.lblCon7.Name = "lblCon7";
-            this.lblCon7.Size = new System.Drawing.Size(59, 13);
+            this.lblCon7.Size = new System.Drawing.Size(64, 13);
             this.lblCon7.TabIndex = 7;
             this.lblCon7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1618,9 +1634,9 @@
             // 
             this.lblCon8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCon8.AutoSize = true;
-            this.lblCon8.Location = new System.Drawing.Point(865, 226);
+            this.lblCon8.Location = new System.Drawing.Point(915, 226);
             this.lblCon8.Name = "lblCon8";
-            this.lblCon8.Size = new System.Drawing.Size(59, 13);
+            this.lblCon8.Size = new System.Drawing.Size(64, 13);
             this.lblCon8.TabIndex = 7;
             this.lblCon8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1628,9 +1644,9 @@
             // 
             this.lblCon9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCon9.AutoSize = true;
-            this.lblCon9.Location = new System.Drawing.Point(865, 257);
+            this.lblCon9.Location = new System.Drawing.Point(915, 257);
             this.lblCon9.Name = "lblCon9";
-            this.lblCon9.Size = new System.Drawing.Size(59, 13);
+            this.lblCon9.Size = new System.Drawing.Size(64, 13);
             this.lblCon9.TabIndex = 7;
             this.lblCon9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1638,9 +1654,9 @@
             // 
             this.lblWA5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblWA5.AutoSize = true;
-            this.lblWA5.Location = new System.Drawing.Point(931, 133);
+            this.lblWA5.Location = new System.Drawing.Point(986, 133);
             this.lblWA5.Name = "lblWA5";
-            this.lblWA5.Size = new System.Drawing.Size(59, 13);
+            this.lblWA5.Size = new System.Drawing.Size(64, 13);
             this.lblWA5.TabIndex = 7;
             this.lblWA5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1648,9 +1664,9 @@
             // 
             this.lblWA6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblWA6.AutoSize = true;
-            this.lblWA6.Location = new System.Drawing.Point(931, 164);
+            this.lblWA6.Location = new System.Drawing.Point(986, 164);
             this.lblWA6.Name = "lblWA6";
-            this.lblWA6.Size = new System.Drawing.Size(59, 13);
+            this.lblWA6.Size = new System.Drawing.Size(64, 13);
             this.lblWA6.TabIndex = 7;
             this.lblWA6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1658,9 +1674,9 @@
             // 
             this.lblWA7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblWA7.AutoSize = true;
-            this.lblWA7.Location = new System.Drawing.Point(931, 195);
+            this.lblWA7.Location = new System.Drawing.Point(986, 195);
             this.lblWA7.Name = "lblWA7";
-            this.lblWA7.Size = new System.Drawing.Size(59, 13);
+            this.lblWA7.Size = new System.Drawing.Size(64, 13);
             this.lblWA7.TabIndex = 7;
             this.lblWA7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1668,9 +1684,9 @@
             // 
             this.lblWA8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblWA8.AutoSize = true;
-            this.lblWA8.Location = new System.Drawing.Point(931, 226);
+            this.lblWA8.Location = new System.Drawing.Point(986, 226);
             this.lblWA8.Name = "lblWA8";
-            this.lblWA8.Size = new System.Drawing.Size(59, 13);
+            this.lblWA8.Size = new System.Drawing.Size(64, 13);
             this.lblWA8.TabIndex = 7;
             this.lblWA8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1678,9 +1694,9 @@
             // 
             this.lblWA9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblWA9.AutoSize = true;
-            this.lblWA9.Location = new System.Drawing.Point(931, 257);
+            this.lblWA9.Location = new System.Drawing.Point(986, 257);
             this.lblWA9.Name = "lblWA9";
-            this.lblWA9.Size = new System.Drawing.Size(59, 13);
+            this.lblWA9.Size = new System.Drawing.Size(64, 13);
             this.lblWA9.TabIndex = 7;
             this.lblWA9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1688,9 +1704,9 @@
             // 
             this.lblOGC5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblOGC5.AutoSize = true;
-            this.lblOGC5.Location = new System.Drawing.Point(997, 133);
+            this.lblOGC5.Location = new System.Drawing.Point(1057, 133);
             this.lblOGC5.Name = "lblOGC5";
-            this.lblOGC5.Size = new System.Drawing.Size(59, 13);
+            this.lblOGC5.Size = new System.Drawing.Size(64, 13);
             this.lblOGC5.TabIndex = 7;
             this.lblOGC5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1698,9 +1714,9 @@
             // 
             this.lblOGC6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblOGC6.AutoSize = true;
-            this.lblOGC6.Location = new System.Drawing.Point(997, 164);
+            this.lblOGC6.Location = new System.Drawing.Point(1057, 164);
             this.lblOGC6.Name = "lblOGC6";
-            this.lblOGC6.Size = new System.Drawing.Size(59, 13);
+            this.lblOGC6.Size = new System.Drawing.Size(64, 13);
             this.lblOGC6.TabIndex = 7;
             this.lblOGC6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1708,9 +1724,9 @@
             // 
             this.lblOGC7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblOGC7.AutoSize = true;
-            this.lblOGC7.Location = new System.Drawing.Point(997, 195);
+            this.lblOGC7.Location = new System.Drawing.Point(1057, 195);
             this.lblOGC7.Name = "lblOGC7";
-            this.lblOGC7.Size = new System.Drawing.Size(59, 13);
+            this.lblOGC7.Size = new System.Drawing.Size(64, 13);
             this.lblOGC7.TabIndex = 7;
             this.lblOGC7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1718,9 +1734,9 @@
             // 
             this.lblOGC8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblOGC8.AutoSize = true;
-            this.lblOGC8.Location = new System.Drawing.Point(997, 226);
+            this.lblOGC8.Location = new System.Drawing.Point(1057, 226);
             this.lblOGC8.Name = "lblOGC8";
-            this.lblOGC8.Size = new System.Drawing.Size(59, 13);
+            this.lblOGC8.Size = new System.Drawing.Size(64, 13);
             this.lblOGC8.TabIndex = 7;
             this.lblOGC8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1728,9 +1744,9 @@
             // 
             this.lblOGC9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblOGC9.AutoSize = true;
-            this.lblOGC9.Location = new System.Drawing.Point(997, 257);
+            this.lblOGC9.Location = new System.Drawing.Point(1057, 257);
             this.lblOGC9.Name = "lblOGC9";
-            this.lblOGC9.Size = new System.Drawing.Size(59, 13);
+            this.lblOGC9.Size = new System.Drawing.Size(64, 13);
             this.lblOGC9.TabIndex = 7;
             this.lblOGC9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1738,9 +1754,9 @@
             // 
             this.lblFGC5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFGC5.AutoSize = true;
-            this.lblFGC5.Location = new System.Drawing.Point(1063, 133);
+            this.lblFGC5.Location = new System.Drawing.Point(1128, 133);
             this.lblFGC5.Name = "lblFGC5";
-            this.lblFGC5.Size = new System.Drawing.Size(59, 13);
+            this.lblFGC5.Size = new System.Drawing.Size(64, 13);
             this.lblFGC5.TabIndex = 7;
             this.lblFGC5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1748,9 +1764,9 @@
             // 
             this.lblFGC6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFGC6.AutoSize = true;
-            this.lblFGC6.Location = new System.Drawing.Point(1063, 164);
+            this.lblFGC6.Location = new System.Drawing.Point(1128, 164);
             this.lblFGC6.Name = "lblFGC6";
-            this.lblFGC6.Size = new System.Drawing.Size(59, 13);
+            this.lblFGC6.Size = new System.Drawing.Size(64, 13);
             this.lblFGC6.TabIndex = 7;
             this.lblFGC6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1758,9 +1774,9 @@
             // 
             this.lblFGC7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFGC7.AutoSize = true;
-            this.lblFGC7.Location = new System.Drawing.Point(1063, 195);
+            this.lblFGC7.Location = new System.Drawing.Point(1128, 195);
             this.lblFGC7.Name = "lblFGC7";
-            this.lblFGC7.Size = new System.Drawing.Size(59, 13);
+            this.lblFGC7.Size = new System.Drawing.Size(64, 13);
             this.lblFGC7.TabIndex = 7;
             this.lblFGC7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1768,9 +1784,9 @@
             // 
             this.lblFGC8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFGC8.AutoSize = true;
-            this.lblFGC8.Location = new System.Drawing.Point(1063, 226);
+            this.lblFGC8.Location = new System.Drawing.Point(1128, 226);
             this.lblFGC8.Name = "lblFGC8";
-            this.lblFGC8.Size = new System.Drawing.Size(59, 13);
+            this.lblFGC8.Size = new System.Drawing.Size(64, 13);
             this.lblFGC8.TabIndex = 7;
             this.lblFGC8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1778,25 +1794,25 @@
             // 
             this.lblFGC9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFGC9.AutoSize = true;
-            this.lblFGC9.Location = new System.Drawing.Point(1063, 257);
+            this.lblFGC9.Location = new System.Drawing.Point(1128, 257);
             this.lblFGC9.Name = "lblFGC9";
-            this.lblFGC9.Size = new System.Drawing.Size(59, 13);
+            this.lblFGC9.Size = new System.Drawing.Size(64, 13);
             this.lblFGC9.TabIndex = 7;
             this.lblFGC9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DimGray;
-            this.panel1.Location = new System.Drawing.Point(10, 4);
+            this.panel1.Location = new System.Drawing.Point(10, 16);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(28, 312);
+            this.panel1.Size = new System.Drawing.Size(28, 313);
             this.panel1.TabIndex = 2;
             // 
             // lblDP
             // 
             this.lblDP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDP.AutoSize = true;
-            this.lblDP.Location = new System.Drawing.Point(707, 12);
+            this.lblDP.Location = new System.Drawing.Point(761, 19);
             this.lblDP.Name = "lblDP";
             this.lblDP.Size = new System.Drawing.Size(22, 13);
             this.lblDP.TabIndex = 7;
@@ -1807,51 +1823,51 @@
             // 
             this.lblFGC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFGC.AutoSize = true;
-            this.lblFGC.Location = new System.Drawing.Point(1103, 12);
+            this.lblFGC.Location = new System.Drawing.Point(1168, 12);
             this.lblFGC.Name = "lblFGC";
-            this.lblFGC.Size = new System.Drawing.Size(67, 13);
+            this.lblFGC.Size = new System.Drawing.Size(67, 26);
             this.lblFGC.TabIndex = 7;
-            this.lblFGC.Text = "Contrubution";
+            this.lblFGC.Text = "FG\r\nContrubution";
             this.lblFGC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblOGC
             // 
             this.lblOGC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblOGC.AutoSize = true;
-            this.lblOGC.Location = new System.Drawing.Point(1033, 12);
+            this.lblOGC.Location = new System.Drawing.Point(1096, 12);
             this.lblOGC.Name = "lblOGC";
-            this.lblOGC.Size = new System.Drawing.Size(63, 13);
+            this.lblOGC.Size = new System.Drawing.Size(63, 26);
             this.lblOGC.TabIndex = 7;
-            this.lblOGC.Text = "Contribution";
+            this.lblOGC.Text = "OG\r\nContribution";
             this.lblOGC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblWA
             // 
             this.lblWA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblWA.AutoSize = true;
-            this.lblWA.Location = new System.Drawing.Point(971, 12);
+            this.lblWA.Location = new System.Drawing.Point(1029, 12);
             this.lblWA.Name = "lblWA";
-            this.lblWA.Size = new System.Drawing.Size(52, 13);
+            this.lblWA.Size = new System.Drawing.Size(52, 26);
             this.lblWA.TabIndex = 7;
-            this.lblWA.Text = "Absorbed";
+            this.lblWA.Text = "Water\r\nAbsorbed";
             this.lblWA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblCon
             // 
             this.lblCon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCon.AutoSize = true;
-            this.lblCon.Location = new System.Drawing.Point(905, 12);
+            this.lblCon.Location = new System.Drawing.Point(956, 12);
             this.lblCon.Name = "lblCon";
-            this.lblCon.Size = new System.Drawing.Size(63, 13);
+            this.lblCon.Size = new System.Drawing.Size(63, 26);
             this.lblCon.TabIndex = 7;
-            this.lblCon.Text = "Contribution";
+            this.lblCon.Text = "SRM\r\nContribution";
             this.lblCon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblFer
             // 
             this.lblFer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFer.AutoSize = true;
-            this.lblFer.Location = new System.Drawing.Point(839, 12);
+            this.lblFer.Location = new System.Drawing.Point(880, 19);
             this.lblFer.Name = "lblFer";
             this.lblFer.Size = new System.Drawing.Size(71, 13);
             this.lblFer.TabIndex = 7;
@@ -1862,7 +1878,7 @@
             // 
             this.lblPoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPoi.AutoSize = true;
-            this.lblPoi.Location = new System.Drawing.Point(773, 12);
+            this.lblPoi.Location = new System.Drawing.Point(826, 19);
             this.lblPoi.Name = "lblPoi";
             this.lblPoi.Size = new System.Drawing.Size(36, 13);
             this.lblPoi.TabIndex = 7;
@@ -1873,7 +1889,7 @@
             // 
             this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(641, 12);
+            this.label22.Location = new System.Drawing.Point(676, 19);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(51, 13);
             this.label22.TabIndex = 7;
@@ -1884,7 +1900,7 @@
             // 
             this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(575, 12);
+            this.label23.Location = new System.Drawing.Point(608, 19);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(47, 13);
             this.label23.TabIndex = 7;
@@ -1895,10 +1911,10 @@
             // 
             this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(510, 12);
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(531, 19);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(42, 9);
+            this.label24.Size = new System.Drawing.Size(61, 13);
             this.label24.TabIndex = 7;
             this.label24.Text = "Attenuation";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1907,7 +1923,7 @@
             // 
             this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(443, 12);
+            this.label25.Location = new System.Drawing.Point(475, 19);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(29, 13);
             this.label25.TabIndex = 7;
@@ -1918,7 +1934,7 @@
             // 
             this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(377, 12);
+            this.label26.Location = new System.Drawing.Point(410, 19);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(15, 13);
             this.label26.TabIndex = 7;
@@ -1929,7 +1945,7 @@
             // 
             this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(311, 12);
+            this.label27.Location = new System.Drawing.Point(333, 19);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(24, 13);
             this.label27.TabIndex = 7;
@@ -1940,7 +1956,7 @@
             // 
             this.label28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(255, 8);
+            this.label28.Location = new System.Drawing.Point(255, 19);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(43, 13);
             this.label28.TabIndex = 7;
@@ -2007,6 +2023,7 @@
             this.txtWaterToAdd.ReadOnly = true;
             this.txtWaterToAdd.Size = new System.Drawing.Size(124, 20);
             this.txtWaterToAdd.TabIndex = 10;
+            this.txtWaterToAdd.TabStop = false;
             this.txtWaterToAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblWaterVolume
@@ -2037,9 +2054,9 @@
             this.panel2.Controls.Add(this.lblFer);
             this.panel2.Controls.Add(this.label22);
             this.panel2.Controls.Add(this.lblPoi);
-            this.panel2.Location = new System.Drawing.Point(30, 143);
+            this.panel2.Location = new System.Drawing.Point(30, 116);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1195, 328);
+            this.panel2.Size = new System.Drawing.Size(1302, 355);
             this.panel2.TabIndex = 12;
             // 
             // textBox17
@@ -2048,10 +2065,11 @@
             this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox17.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox17.ForeColor = System.Drawing.Color.White;
-            this.textBox17.Location = new System.Drawing.Point(40, 3);
+            this.textBox17.Location = new System.Drawing.Point(40, 16);
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(198, 24);
             this.textBox17.TabIndex = 20;
+            this.textBox17.TabStop = false;
             this.textBox17.Text = "Grain";
             this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2062,6 +2080,7 @@
             this.txtWaterToAddGal.ReadOnly = true;
             this.txtWaterToAddGal.Size = new System.Drawing.Size(86, 20);
             this.txtWaterToAddGal.TabIndex = 10;
+            this.txtWaterToAddGal.TabStop = false;
             this.txtWaterToAddGal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
@@ -2080,6 +2099,7 @@
             this.txtWaterFinishGal.ReadOnly = true;
             this.txtWaterFinishGal.Size = new System.Drawing.Size(86, 20);
             this.txtWaterFinishGal.TabIndex = 10;
+            this.txtWaterFinishGal.TabStop = false;
             this.txtWaterFinishGal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtWaterVolume
@@ -2098,6 +2118,7 @@
             this.txtPreEff.ReadOnly = true;
             this.txtPreEff.Size = new System.Drawing.Size(87, 20);
             this.txtPreEff.TabIndex = 10;
+            this.txtPreEff.TabStop = false;
             this.txtPreEff.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
@@ -2178,6 +2199,7 @@
             this.txtHopAB.Size = new System.Drawing.Size(87, 20);
             this.txtHopAB.TabIndex = 10;
             this.txtHopAB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtHopAB.TextChanged += new System.EventHandler(this.txtHopAB_TextChanged);
             // 
             // label6
             // 
@@ -2200,7 +2222,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 76F));
             this.tableLayoutPanel2.Controls.Add(this.lblIBU1, 5, 0);
             this.tableLayoutPanel2.Controls.Add(this.cboHops1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.cboHops2, 0, 1);
@@ -2400,7 +2422,7 @@
             this.lblHopWA1.BackColor = System.Drawing.Color.DarkGray;
             this.lblHopWA1.Location = new System.Drawing.Point(535, 9);
             this.lblHopWA1.Name = "lblHopWA1";
-            this.lblHopWA1.Size = new System.Drawing.Size(67, 13);
+            this.lblHopWA1.Size = new System.Drawing.Size(70, 13);
             this.lblHopWA1.TabIndex = 17;
             this.lblHopWA1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2410,7 +2432,7 @@
             this.lblHopWA2.AutoSize = true;
             this.lblHopWA2.Location = new System.Drawing.Point(535, 40);
             this.lblHopWA2.Name = "lblHopWA2";
-            this.lblHopWA2.Size = new System.Drawing.Size(67, 13);
+            this.lblHopWA2.Size = new System.Drawing.Size(70, 13);
             this.lblHopWA2.TabIndex = 17;
             this.lblHopWA2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2420,7 +2442,7 @@
             this.lblHopWA3.AutoSize = true;
             this.lblHopWA3.Location = new System.Drawing.Point(535, 71);
             this.lblHopWA3.Name = "lblHopWA3";
-            this.lblHopWA3.Size = new System.Drawing.Size(67, 13);
+            this.lblHopWA3.Size = new System.Drawing.Size(70, 13);
             this.lblHopWA3.TabIndex = 17;
             this.lblHopWA3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2430,7 +2452,7 @@
             this.lblHopWA4.AutoSize = true;
             this.lblHopWA4.Location = new System.Drawing.Point(535, 102);
             this.lblHopWA4.Name = "lblHopWA4";
-            this.lblHopWA4.Size = new System.Drawing.Size(67, 13);
+            this.lblHopWA4.Size = new System.Drawing.Size(70, 13);
             this.lblHopWA4.TabIndex = 17;
             this.lblHopWA4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2440,7 +2462,7 @@
             this.lblHopWA5.AutoSize = true;
             this.lblHopWA5.Location = new System.Drawing.Point(535, 133);
             this.lblHopWA5.Name = "lblHopWA5";
-            this.lblHopWA5.Size = new System.Drawing.Size(67, 13);
+            this.lblHopWA5.Size = new System.Drawing.Size(70, 13);
             this.lblHopWA5.TabIndex = 17;
             this.lblHopWA5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2651,10 +2673,11 @@
             this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox18.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox18.ForeColor = System.Drawing.Color.White;
-            this.textBox18.Location = new System.Drawing.Point(42, 6);
+            this.textBox18.Location = new System.Drawing.Point(42, 5);
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(198, 24);
             this.textBox18.TabIndex = 20;
+            this.textBox18.TabStop = false;
             this.textBox18.Text = "Hops";
             this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2695,6 +2718,7 @@
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(321, 24);
             this.textBox16.TabIndex = 20;
+            this.textBox16.TabStop = false;
             this.textBox16.Text = "YEAST";
             this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2760,12 +2784,132 @@
             this.textBox1.Size = new System.Drawing.Size(221, 33);
             this.textBox1.TabIndex = 23;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(6, 179);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(65, 25);
+            this.label14.TabIndex = 24;
+            this.label14.Text = "SRM:";
+            // 
+            // lblSRMTotal
+            // 
+            this.lblSRMTotal.AutoSize = true;
+            this.lblSRMTotal.Location = new System.Drawing.Point(76, 179);
+            this.lblSRMTotal.Name = "lblSRMTotal";
+            this.lblSRMTotal.Size = new System.Drawing.Size(0, 25);
+            this.lblSRMTotal.TabIndex = 24;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(6, 138);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(52, 25);
+            this.label15.TabIndex = 24;
+            this.label15.Text = "IBU:";
+            // 
+            // lblIBUTotal
+            // 
+            this.lblIBUTotal.AutoSize = true;
+            this.lblIBUTotal.Location = new System.Drawing.Point(76, 138);
+            this.lblIBUTotal.Name = "lblIBUTotal";
+            this.lblIBUTotal.Size = new System.Drawing.Size(0, 25);
+            this.lblIBUTotal.TabIndex = 24;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(6, 97);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(60, 25);
+            this.label16.TabIndex = 24;
+            this.label16.Text = "ABV:";
+            // 
+            // lblABVTotal
+            // 
+            this.lblABVTotal.AutoSize = true;
+            this.lblABVTotal.Location = new System.Drawing.Point(76, 97);
+            this.lblABVTotal.Name = "lblABVTotal";
+            this.lblABVTotal.Size = new System.Drawing.Size(0, 25);
+            this.lblABVTotal.TabIndex = 24;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(6, 56);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(47, 25);
+            this.label18.TabIndex = 24;
+            this.label18.Text = "FG:";
+            // 
+            // lblFGTotal
+            // 
+            this.lblFGTotal.AutoSize = true;
+            this.lblFGTotal.Location = new System.Drawing.Point(76, 56);
+            this.lblFGTotal.Name = "lblFGTotal";
+            this.lblFGTotal.Size = new System.Drawing.Size(0, 25);
+            this.lblFGTotal.TabIndex = 24;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(6, 15);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(50, 25);
+            this.label20.TabIndex = 24;
+            this.label20.Text = "OG:";
+            // 
+            // lblOGTotal
+            // 
+            this.lblOGTotal.AutoSize = true;
+            this.lblOGTotal.Location = new System.Drawing.Point(76, 15);
+            this.lblOGTotal.Name = "lblOGTotal";
+            this.lblOGTotal.Size = new System.Drawing.Size(0, 25);
+            this.lblOGTotal.TabIndex = 24;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.label16);
+            this.panel7.Controls.Add(this.lblOGTotal);
+            this.panel7.Controls.Add(this.label14);
+            this.panel7.Controls.Add(this.lblFGTotal);
+            this.panel7.Controls.Add(this.label15);
+            this.panel7.Controls.Add(this.lblABVTotal);
+            this.panel7.Controls.Add(this.label18);
+            this.panel7.Controls.Add(this.lblIBUTotal);
+            this.panel7.Controls.Add(this.label20);
+            this.panel7.Controls.Add(this.lblSRMTotal);
+            this.panel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel7.Location = new System.Drawing.Point(1373, 135);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(200, 230);
+            this.panel7.TabIndex = 25;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Ink Free", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(1336, 94);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(274, 26);
+            this.label17.TabIndex = 26;
+            this.label17.Text = "Potential Recipe Outcomes";
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip1.ToolTipTitle = "Test";
+            // 
             // frmRecipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(1693, 808);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.panel7);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblBeerName);
             this.Controls.Add(this.panel6);
@@ -2807,6 +2951,8 @@
             this.panel3.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3043,6 +3189,19 @@
         private System.Windows.Forms.ComboBox cboHopMin5;
         private System.Windows.Forms.Label lblBeerName;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lblSRMTotal;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblIBUTotal;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lblABVTotal;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lblFGTotal;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label lblOGTotal;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 
