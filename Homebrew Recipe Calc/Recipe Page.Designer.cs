@@ -273,6 +273,26 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.txtboxLBS = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.txtboxGrams = new System.Windows.Forms.TextBox();
+            this.txtboxGal = new System.Windows.Forms.TextBox();
+            this.txtboxmL = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.txtboxOz = new System.Windows.Forms.TextBox();
+            this.txtboxGrams2 = new System.Windows.Forms.TextBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -280,6 +300,10 @@
             this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel9.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // lstYeast
@@ -313,7 +337,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.lblLbGrain1, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblLbGrain2, 2, 1);
@@ -1956,11 +1980,11 @@
             // 
             this.label28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(255, 19);
+            this.label28.Location = new System.Drawing.Point(246, 19);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(43, 13);
+            this.label28.Size = new System.Drawing.Size(58, 13);
             this.label28.TabIndex = 7;
-            this.label28.Text = "Amount";
+            this.label28.Text = "Amount (g)";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label30
@@ -2110,6 +2134,7 @@
             this.txtWaterVolume.TabIndex = 10;
             this.txtWaterVolume.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtWaterVolume.TextChanged += new System.EventHandler(this.txtWaterVolume_TextChanged_1);
+            this.txtWaterVolume.Leave += new System.EventHandler(this.txtWaterVolume_Leave);
             // 
             // txtPreEff
             // 
@@ -2165,7 +2190,7 @@
             // quitToolStripMenuItem
             // 
             this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-            this.quitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.quitToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
             this.quitToolStripMenuItem.Text = "Quit";
             this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
             // 
@@ -2180,7 +2205,7 @@
             // aBVCalculatorToolStripMenuItem
             // 
             this.aBVCalculatorToolStripMenuItem.Name = "aBVCalculatorToolStripMenuItem";
-            this.aBVCalculatorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aBVCalculatorToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.aBVCalculatorToolStripMenuItem.Text = "ABV Calculator";
             this.aBVCalculatorToolStripMenuItem.Click += new System.EventHandler(this.aBVCalculatorToolStripMenuItem_Click);
             // 
@@ -2223,7 +2248,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 76F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82F));
             this.tableLayoutPanel2.Controls.Add(this.lblIBU1, 5, 0);
             this.tableLayoutPanel2.Controls.Add(this.cboHops1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.cboHops2, 0, 1);
@@ -2288,7 +2313,6 @@
             this.cboHops1.Name = "cboHops1";
             this.cboHops1.Size = new System.Drawing.Size(194, 21);
             this.cboHops1.TabIndex = 0;
-            this.cboHops1.SelectedIndexChanged += new System.EventHandler(this.cboHops1_SelectedIndexChanged);
             // 
             // cboHops2
             // 
@@ -2423,7 +2447,7 @@
             this.lblHopWA1.BackColor = System.Drawing.Color.DarkGray;
             this.lblHopWA1.Location = new System.Drawing.Point(535, 9);
             this.lblHopWA1.Name = "lblHopWA1";
-            this.lblHopWA1.Size = new System.Drawing.Size(70, 13);
+            this.lblHopWA1.Size = new System.Drawing.Size(76, 13);
             this.lblHopWA1.TabIndex = 17;
             this.lblHopWA1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2433,7 +2457,7 @@
             this.lblHopWA2.AutoSize = true;
             this.lblHopWA2.Location = new System.Drawing.Point(535, 40);
             this.lblHopWA2.Name = "lblHopWA2";
-            this.lblHopWA2.Size = new System.Drawing.Size(70, 13);
+            this.lblHopWA2.Size = new System.Drawing.Size(76, 13);
             this.lblHopWA2.TabIndex = 17;
             this.lblHopWA2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2443,7 +2467,7 @@
             this.lblHopWA3.AutoSize = true;
             this.lblHopWA3.Location = new System.Drawing.Point(535, 71);
             this.lblHopWA3.Name = "lblHopWA3";
-            this.lblHopWA3.Size = new System.Drawing.Size(70, 13);
+            this.lblHopWA3.Size = new System.Drawing.Size(76, 13);
             this.lblHopWA3.TabIndex = 17;
             this.lblHopWA3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2453,7 +2477,7 @@
             this.lblHopWA4.AutoSize = true;
             this.lblHopWA4.Location = new System.Drawing.Point(535, 102);
             this.lblHopWA4.Name = "lblHopWA4";
-            this.lblHopWA4.Size = new System.Drawing.Size(70, 13);
+            this.lblHopWA4.Size = new System.Drawing.Size(76, 13);
             this.lblHopWA4.TabIndex = 17;
             this.lblHopWA4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2463,7 +2487,7 @@
             this.lblHopWA5.AutoSize = true;
             this.lblHopWA5.Location = new System.Drawing.Point(535, 133);
             this.lblHopWA5.Name = "lblHopWA5";
-            this.lblHopWA5.Size = new System.Drawing.Size(70, 13);
+            this.lblHopWA5.Size = new System.Drawing.Size(76, 13);
             this.lblHopWA5.TabIndex = 17;
             this.lblHopWA5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2738,7 +2762,7 @@
             this.panel6.Controls.Add(this.label11);
             this.panel6.Controls.Add(this.txtYeastFactor);
             this.panel6.Controls.Add(this.lstYeast);
-            this.panel6.Location = new System.Drawing.Point(733, 484);
+            this.panel6.Location = new System.Drawing.Point(6, 8);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(492, 116);
             this.panel6.TabIndex = 21;
@@ -2769,7 +2793,7 @@
             // 
             this.lblBeerName.AutoSize = true;
             this.lblBeerName.Font = new System.Drawing.Font("Eras Demi ITC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBeerName.Location = new System.Drawing.Point(36, 67);
+            this.lblBeerName.Location = new System.Drawing.Point(1, 23);
             this.lblBeerName.Name = "lblBeerName";
             this.lblBeerName.Size = new System.Drawing.Size(126, 24);
             this.lblBeerName.TabIndex = 22;
@@ -2781,7 +2805,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Cursor = System.Windows.Forms.Cursors.Cross;
             this.textBox1.Font = new System.Drawing.Font("Ink Free", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(168, 58);
+            this.textBox1.Location = new System.Drawing.Point(133, 14);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(221, 33);
             this.textBox1.TabIndex = 23;
@@ -2904,17 +2928,210 @@
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTip1.ToolTipTitle = "Test";
             // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.textBox1);
+            this.panel8.Controls.Add(this.lblBeerName);
+            this.panel8.Location = new System.Drawing.Point(35, 44);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(385, 62);
+            this.panel8.TabIndex = 27;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1341, 371);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(251, 332);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 28;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Ink Free", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(164, 134);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(176, 26);
+            this.label19.TabIndex = 29;
+            this.label19.Text = "Quick Conversion";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(336, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 32;
+            this.button2.Text = "Convert";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(96, 7);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(65, 13);
+            this.label21.TabIndex = 30;
+            this.label21.Text = "Pounds (lbs)";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(264, 7);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(52, 13);
+            this.label31.TabIndex = 30;
+            this.label31.Text = "Grams (g)";
+            // 
+            // txtboxLBS
+            // 
+            this.txtboxLBS.Location = new System.Drawing.Point(164, 3);
+            this.txtboxLBS.Name = "txtboxLBS";
+            this.txtboxLBS.Size = new System.Drawing.Size(43, 20);
+            this.txtboxLBS.TabIndex = 31;
+            this.txtboxLBS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(96, 65);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(67, 13);
+            this.label29.TabIndex = 30;
+            this.label29.Text = "Gallons (Gal)";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(264, 65);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(68, 13);
+            this.label33.TabIndex = 30;
+            this.label33.Text = "Milliliters (mL)";
+            // 
+            // txtboxGrams
+            // 
+            this.txtboxGrams.Location = new System.Drawing.Point(214, 3);
+            this.txtboxGrams.Name = "txtboxGrams";
+            this.txtboxGrams.Size = new System.Drawing.Size(43, 20);
+            this.txtboxGrams.TabIndex = 31;
+            this.txtboxGrams.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtboxGal
+            // 
+            this.txtboxGal.Location = new System.Drawing.Point(164, 61);
+            this.txtboxGal.Name = "txtboxGal";
+            this.txtboxGal.Size = new System.Drawing.Size(43, 20);
+            this.txtboxGal.TabIndex = 31;
+            this.txtboxGal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtboxmL
+            // 
+            this.txtboxmL.Location = new System.Drawing.Point(214, 61);
+            this.txtboxmL.Name = "txtboxmL";
+            this.txtboxmL.Size = new System.Drawing.Size(43, 20);
+            this.txtboxmL.TabIndex = 31;
+            this.txtboxmL.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(96, 36);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(64, 13);
+            this.label35.TabIndex = 30;
+            this.label35.Text = "Ounces (oz)";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(264, 36);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(52, 13);
+            this.label36.TabIndex = 30;
+            this.label36.Text = "Grams (g)";
+            // 
+            // txtboxOz
+            // 
+            this.txtboxOz.Location = new System.Drawing.Point(164, 32);
+            this.txtboxOz.Name = "txtboxOz";
+            this.txtboxOz.Size = new System.Drawing.Size(43, 20);
+            this.txtboxOz.TabIndex = 31;
+            this.txtboxOz.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtboxGrams2
+            // 
+            this.txtboxGrams2.Location = new System.Drawing.Point(214, 32);
+            this.txtboxGrams2.Name = "txtboxGrams2";
+            this.txtboxGrams2.Size = new System.Drawing.Size(43, 20);
+            this.txtboxGrams2.TabIndex = 31;
+            this.txtboxGrams2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.button4);
+            this.panel9.Controls.Add(this.button3);
+            this.panel9.Controls.Add(this.txtboxmL);
+            this.panel9.Controls.Add(this.txtboxGal);
+            this.panel9.Controls.Add(this.button2);
+            this.panel9.Controls.Add(this.txtboxGrams2);
+            this.panel9.Controls.Add(this.txtboxGrams);
+            this.panel9.Controls.Add(this.label33);
+            this.panel9.Controls.Add(this.label29);
+            this.panel9.Controls.Add(this.txtboxOz);
+            this.panel9.Controls.Add(this.txtboxLBS);
+            this.panel9.Controls.Add(this.label36);
+            this.panel9.Controls.Add(this.label31);
+            this.panel9.Controls.Add(this.label35);
+            this.panel9.Controls.Add(this.label21);
+            this.panel9.Location = new System.Drawing.Point(9, 170);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(489, 91);
+            this.panel9.TabIndex = 33;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(336, 31);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 33;
+            this.button3.Text = "Convert";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(336, 60);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 34;
+            this.button4.Text = "Convert";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.panel9);
+            this.panel10.Controls.Add(this.label19);
+            this.panel10.Controls.Add(this.panel6);
+            this.panel10.Location = new System.Drawing.Point(727, 476);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(524, 279);
+            this.panel10.TabIndex = 34;
+            // 
             // frmRecipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(1693, 808);
+            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panel8);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.panel7);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.lblBeerName);
-            this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label6);
@@ -2937,6 +3154,7 @@
             this.Controls.Add(this.label30);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmRecipe";
             this.Text = "509 Recipe Calculator";
@@ -2955,6 +3173,13 @@
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3204,6 +3429,26 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtboxmL;
+        private System.Windows.Forms.TextBox txtboxGal;
+        private System.Windows.Forms.TextBox txtboxGrams;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.TextBox txtboxLBS;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.TextBox txtboxOz;
+        private System.Windows.Forms.TextBox txtboxGrams2;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Panel panel10;
     }
 }
 

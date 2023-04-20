@@ -43,6 +43,7 @@ namespace Homebrew_Recipe_Calc
             conn = new OleDbConnection("provider = Microsoft.ACE.OLEDB.12.0;" + "Data Source=" + DBPath);
         }
 
+
         private void Form1_Load(object sender, EventArgs e)
         {
             try
@@ -128,8 +129,19 @@ namespace Homebrew_Recipe_Calc
                 MessageBox.Show("Yeast Combo Box Catch");
                 conn.Close();
             }
-
-
+        }
+        protected override void OnKeyDown(KeyEventArgs e)
+        {
+            try
+            {
+                if (e.KeyCode == Keys.Enter)
+                {
+                    SelectNextControl(ActiveControl, true, true, true, true);
+                    e.Handled = true;
+                    e.SuppressKeyPress = true;
+                }
+            }
+            catch { }
         }
         private void watervolume(object sender)
         {
@@ -242,97 +254,97 @@ namespace Homebrew_Recipe_Calc
                         lblOGC2.Text = OGCon[1].ToString("N3");
                     }
                 }
-                 if (grainWt[2] > 0)
-                 {
-                     if (lblAff3.Text == "y")
-                        {
-                            OGCon[2] = ((points[2] * Efficiency) / waterVol2) / 1000;
-                            lblOGC3.Text = OGCon[2].ToString("N3");
-                        }
-                        else
-                        {
-                            OGCon[2] = ((points[2] + Efficiency) / waterVol2) / 1000;
-                            lblOGC3.Text = OGCon[2].ToString("N3");
-                        }
-                 }
-                 if (grainWt[3] > 0)
-                 {
-                     if (lblAff4.Text == "y")
-                        {
-                            OGCon[3] = ((points[3] * Efficiency) / waterVol2) / 1000;
-                            lblOGC4.Text = OGCon[3].ToString("N3");
-                        }
-                        else
-                        {
-                            OGCon[3] = ((points[3] + Efficiency) / waterVol2) / 1000;
-                            lblOGC4.Text = OGCon[3].ToString("N3");
-                        }
-                 }
-                 if (grainWt[4] > 0)
-                 {
-                     if (lblAff5.Text == "y")
-                        {
-                            OGCon[4] = ((points[4] * Efficiency) / waterVol2) / 1000;
-                            lblOGC5.Text = OGCon[4].ToString("N3");
-                        }
-                        else
-                        {
-                            OGCon[4] = ((points[4] + Efficiency) / waterVol2) / 1000;
-                            lblOGC5.Text = OGCon[4].ToString("N3");
-                        }
-                 }
-                 if (grainWt[5] > 0)
-                 {
-                     if (lblAff6.Text == "y")
-                        {
-                            OGCon[5] = ((points[5] * Efficiency) / waterVol2) / 1000;
-                            lblOGC6.Text = OGCon[5].ToString("N3");
-                        }
-                        else
-                        {
-                            OGCon[5] = ((points[5] + Efficiency) / waterVol2) / 1000;
-                            lblOGC6.Text = OGCon[5].ToString("N3");
-                        }
-                 }
-                 if (grainWt[6] > 0)
-                 {
-                     if (lblAff7.Text == "y")
-                        {
-                            OGCon[6] = ((points[6] * Efficiency) / waterVol2) / 1000;
-                            lblOGC7.Text = OGCon[6].ToString("N3");
-                        }
-                        else
-                        {
-                            OGCon[6] = ((points[6] + Efficiency) / waterVol2) / 1000;
-                            lblOGC7.Text = OGCon[6].ToString("N3");
-                        }
-                 }
-                 if (grainWt[7] > 0)
-                 {
-                     if (lblAff8.Text == "y")
-                        {
-                            OGCon[7] = ((points[7] * Efficiency) / waterVol2) / 1000;
-                            lblOGC8.Text = OGCon[7].ToString("N3");
-                        }
-                        else
-                        {
-                            OGCon[7] = ((points[7] + Efficiency) / waterVol2) / 1000;
-                            lblOGC8.Text = OGCon[7].ToString("N3");
-                        }
-                 }
-                 if (grainWt[8] > 0)
-                 {
+                if (grainWt[2] > 0)
+                {
+                    if (lblAff3.Text == "y")
+                    {
+                        OGCon[2] = ((points[2] * Efficiency) / waterVol2) / 1000;
+                        lblOGC3.Text = OGCon[2].ToString("N3");
+                    }
+                    else
+                    {
+                        OGCon[2] = ((points[2] + Efficiency) / waterVol2) / 1000;
+                        lblOGC3.Text = OGCon[2].ToString("N3");
+                    }
+                }
+                if (grainWt[3] > 0)
+                {
+                    if (lblAff4.Text == "y")
+                    {
+                        OGCon[3] = ((points[3] * Efficiency) / waterVol2) / 1000;
+                        lblOGC4.Text = OGCon[3].ToString("N3");
+                    }
+                    else
+                    {
+                        OGCon[3] = ((points[3] + Efficiency) / waterVol2) / 1000;
+                        lblOGC4.Text = OGCon[3].ToString("N3");
+                    }
+                }
+                if (grainWt[4] > 0)
+                {
+                    if (lblAff5.Text == "y")
+                    {
+                        OGCon[4] = ((points[4] * Efficiency) / waterVol2) / 1000;
+                        lblOGC5.Text = OGCon[4].ToString("N3");
+                    }
+                    else
+                    {
+                        OGCon[4] = ((points[4] + Efficiency) / waterVol2) / 1000;
+                        lblOGC5.Text = OGCon[4].ToString("N3");
+                    }
+                }
+                if (grainWt[5] > 0)
+                {
+                    if (lblAff6.Text == "y")
+                    {
+                        OGCon[5] = ((points[5] * Efficiency) / waterVol2) / 1000;
+                        lblOGC6.Text = OGCon[5].ToString("N3");
+                    }
+                    else
+                    {
+                        OGCon[5] = ((points[5] + Efficiency) / waterVol2) / 1000;
+                        lblOGC6.Text = OGCon[5].ToString("N3");
+                    }
+                }
+                if (grainWt[6] > 0)
+                {
+                    if (lblAff7.Text == "y")
+                    {
+                        OGCon[6] = ((points[6] * Efficiency) / waterVol2) / 1000;
+                        lblOGC7.Text = OGCon[6].ToString("N3");
+                    }
+                    else
+                    {
+                        OGCon[6] = ((points[6] + Efficiency) / waterVol2) / 1000;
+                        lblOGC7.Text = OGCon[6].ToString("N3");
+                    }
+                }
+                if (grainWt[7] > 0)
+                {
+                    if (lblAff8.Text == "y")
+                    {
+                        OGCon[7] = ((points[7] * Efficiency) / waterVol2) / 1000;
+                        lblOGC8.Text = OGCon[7].ToString("N3");
+                    }
+                    else
+                    {
+                        OGCon[7] = ((points[7] + Efficiency) / waterVol2) / 1000;
+                        lblOGC8.Text = OGCon[7].ToString("N3");
+                    }
+                }
+                if (grainWt[8] > 0)
+                {
                     if (lblAff9.Text == "y")
-                        {
-                            OGCon[8] = ((points[8] * Efficiency) / waterVol2) / 1000;
-                            lblOGC9.Text = OGCon[8].ToString("N3");
-                        }
-                        else
-                        {
-                            OGCon[8] = ((points[8] + Efficiency) / waterVol2) / 1000;
-                            lblOGC9.Text = OGCon[8].ToString("N3");
-                        }
-                 }
+                    {
+                        OGCon[8] = ((points[8] * Efficiency) / waterVol2) / 1000;
+                        lblOGC9.Text = OGCon[8].ToString("N3");
+                    }
+                    else
+                    {
+                        OGCon[8] = ((points[8] + Efficiency) / waterVol2) / 1000;
+                        lblOGC9.Text = OGCon[8].ToString("N3");
+                    }
+                }
                 watervolume(lblOGTotal);
             }
             catch (Exception)
@@ -470,7 +482,6 @@ namespace Homebrew_Recipe_Calc
                         Lov[0] = double.Parse(lblLov1.Text);
                         contribution[0] = 1.49 * Math.Pow((Lov[0] * Lbs[0] / waterVol1), .69);
                         lblCon1.Text = contribution[0].ToString("N1");
-                       // lblSRMTotal.Text = contribution.Sum().ToString("N0");
                     }
                     else
                     {
@@ -484,7 +495,6 @@ namespace Homebrew_Recipe_Calc
                         Lov[1] = double.Parse(lblLov2.Text);
                         contribution[1] = 1.49 * Math.Pow((Lov[1] * Lbs[1] / waterVol1), .69);
                         lblCon2.Text = contribution[1].ToString("N1");
-                       // lblSRMTotal.Text = contribution.Sum().ToString("N0");
                     }
                     else
                     {
@@ -498,7 +508,6 @@ namespace Homebrew_Recipe_Calc
                         Lov[2] = double.Parse(lblLov3.Text);
                         contribution[2] = 1.49 * Math.Pow((Lov[2] * Lbs[2] / waterVol1), .69);
                         lblCon3.Text = contribution[2].ToString("N1");
-                        //lblSRMTotal.Text = contribution.Sum().ToString("N0");
                     }
                     else
                     {
@@ -512,7 +521,6 @@ namespace Homebrew_Recipe_Calc
                         Lov[3] = double.Parse(lblLov4.Text);
                         contribution[3] = 1.49 * Math.Pow((Lov[3] * Lbs[3] / waterVol1), .69);
                         lblCon4.Text = contribution[3].ToString("N1");
-                        //lblSRMTotal.Text = contribution.Sum().ToString("N0");
                     }
                     else
                     {
@@ -526,7 +534,6 @@ namespace Homebrew_Recipe_Calc
                         Lov[4] = double.Parse(lblLov5.Text);
                         contribution[4] = 1.49 * Math.Pow((Lov[4] * Lbs[4] / waterVol1), .69);
                         lblCon5.Text = contribution[4].ToString("N1");
-                        //lblSRMTotal.Text = contribution.Sum().ToString("N0");
                     }
                     else
                     {
@@ -540,7 +547,6 @@ namespace Homebrew_Recipe_Calc
                         Lov[5] = double.Parse(lblLov6.Text);
                         contribution[5] = 1.49 * Math.Pow((Lov[5] * Lbs[5] / waterVol1), .69);
                         lblCon6.Text = contribution[5].ToString("N1");
-                       // lblSRMTotal.Text = contribution.Sum().ToString("N0");
                     }
                     else
                     {
@@ -554,7 +560,6 @@ namespace Homebrew_Recipe_Calc
                         Lov[6] = double.Parse(lblLov7.Text);
                         contribution[6] = 1.49 * Math.Pow((Lov[6] * Lbs[6] / waterVol1), .69);
                         lblCon7.Text = contribution[6].ToString("N1");
-                        //lblSRMTotal.Text = contribution.Sum().ToString("N0");
                     }
                     else
                     {
@@ -568,7 +573,6 @@ namespace Homebrew_Recipe_Calc
                         Lov[7] = double.Parse(lblLov8.Text);
                         contribution[7] = 1.49 * Math.Pow((Lov[7] * Lbs[7] / waterVol1), .69);
                         lblCon8.Text = contribution[7].ToString("N1");
-                        //lblSRMTotal.Text = contribution.Sum().ToString("N0");
                     }
                     else
                     {
@@ -582,7 +586,6 @@ namespace Homebrew_Recipe_Calc
                         Lov[8] = double.Parse(lblLov9.Text);
                         contribution[8] = 1.49 * Math.Pow((Lov[8] * Lbs[8] / waterVol1), .69);
                         lblCon9.Text = contribution[8].ToString("N1");
-                       // lblSRMTotal.Text = contribution.Sum().ToString("N0");
                     }
                     else
                     {
@@ -991,7 +994,7 @@ namespace Homebrew_Recipe_Calc
                     {
                         percentChange(percent[0]);
 
-                        Lbs[0] = grainWt[0] / 1000 * 2.20462;
+                        Lbs[0] = grainWt[0] / 453.59237;
                         lblLbGrain1.Text = Lbs[0].ToString("N2");
 
                         if (Lbs[0] >= .01)
@@ -1016,37 +1019,6 @@ namespace Homebrew_Recipe_Calc
                             lblwaterAB[0] = waterAb[0] * grainWt[0];
                             lblWA1.Text = lblwaterAB[0].ToString();
                         }
-                        /*if (grainWt[0] >= .01)
-                        {
-                            Lov[0] = double.Parse(lblLov1.Text);
-                            contribution[0] = 1.49 * Math.Pow((Lov[0] * Lbs[0] / waterVol1), .69);
-                            lblCon1.Text = contribution[0].ToString("N1");
-                            lblSRMTotal.Text = contribution.Sum().ToString("N0");
-                        }
-                        else
-                        {
-                            lblCon1.Text = "0.0";
-                        }
-                        
-                        /*if (lblAff1.Text == "y")
-                        {
-                            OGCon[0] = ((points[0] * Efficiency) / waterVol2) / 1000;
-                            lblOGC1.Text = OGCon[0].ToString("N3");
-                        }
-                        else
-                        {
-                            OGCon[0] = ((points[0] + Efficiency) / waterVol2) / 1000;
-                            lblOGC1.Text = OGCon[0].ToString("N3");
-                        }*/
-                        /*if (Attn[0] == 0)
-                        {
-                            lblFGC1.Text = OGCon[0].ToString("N3");
-                        }
-                        else
-                        {
-                            FGCon[0] = OGCon[0] - (1 + OGCon[0] - 1) * yeastFact / 100;
-                            lblFGC1.Text = FGCon[0].ToString("N3");
-                        }*/
                     }
                 }
                 else
@@ -1073,7 +1045,7 @@ namespace Homebrew_Recipe_Calc
                     {
                         percentChange(percent[1]);
 
-                        Lbs[1] = grainWt[1] / 1000 * 2.20462;
+                        Lbs[1] = grainWt[1] / 453.59237;
                         lblLbGrain2.Text = Lbs[1].ToString("N2");
 
                         if (Lbs[1] >= .01)
@@ -1092,44 +1064,12 @@ namespace Homebrew_Recipe_Calc
                         {
                             lblFer2.Text = "0.0";
                         }
-                        /*                        if (grainWt[1] >= .01)
-                        {
-                            Lov[1] = double.Parse(lblLov2.Text);
-                            contribution[1] = 1.49 * Math.Pow((Lov[1] * Lbs[1] / waterVol1), .69);
-                            lblCon2.Text = contribution[1].ToString("N1");
-                            lblSRMTotal.Text = contribution.Sum().ToString("N0");
-                        }
-                        else
-                        {
-                            lblCon2.Text = "0.0";
-                        }*/
                         if (grainWt[1] >= .01)
                         {
                             waterAb[1] = double.Parse(waterAbsor[1]);
                             lblwaterAB[1] = waterAb[1] * grainWt[1];
                             lblWA2.Text = lblwaterAB[1].ToString();
                         }
-                        
-                        /*if (lblAff2.Text == "y")
-                        {
-                            OGCon[1] = ((points[1] * Efficiency) / waterVol2) / 1000;
-                            lblOGC2.Text = OGCon[1].ToString("N3");
-                        }
-                        else
-                        {
-                            OGCon[1] = ((points[1] + Efficiency) / waterVol2) / 1000;
-                            lblOGC2.Text = OGCon[1].ToString("N3");
-                        }*/
-                        
-                        /*if (Attn[1] == 0)
-                        {
-                            lblFGC2.Text = OGCon[1].ToString("N3");
-                        }
-                        else
-                        {
-                            FGCon[1] = OGCon[1] - (1 + OGCon[1] - 1) * yeastFact / 100;
-                            lblFGC2.Text = FGCon[1].ToString("N3");
-                        }*/
                     }
                 }
                 else
@@ -1160,7 +1100,7 @@ namespace Homebrew_Recipe_Calc
                     {
                         percentChange(percent[2]);
 
-                        Lbs[2] = grainWt[2] / 1000 * 2.20462;
+                        Lbs[2] = grainWt[2] / 453.59237;
                         lblLbGrain3.Text = Lbs[2].ToString("N2");
 
                         if (Lbs[2] >= .01)
@@ -1179,17 +1119,6 @@ namespace Homebrew_Recipe_Calc
                         {
                             lblFer3.Text = "0.0";
                         }
-                        /*if (grainWt[2] >= .01)
-                        {
-                            Lov[2] = double.Parse(lblLov3.Text);
-                            contribution[2] = 1.49 * Math.Pow((Lov[2] * Lbs[2] / waterVol1), .69);
-                            lblCon3.Text = contribution[2].ToString("N1");
-                            lblSRMTotal.Text = contribution.Sum().ToString("N0");
-                        }
-                        else
-                        {
-                            lblCon3.Text = "0.0";
-                        }*/
                         if (grainWt[2] >= .01)
                         {
                             waterAb[2] = double.Parse(waterAbsor[2]);
@@ -1197,33 +1126,14 @@ namespace Homebrew_Recipe_Calc
                             lblWA3.Text = lblwaterAB[2].ToString();
                         }
                         originalGravityChange(cboGrain3);
-                        /*if (lblAff3.Text == "y")
-                        {
-                            OGCon[2] = ((points[2] * Efficiency) / waterVol2) / 1000;
-                            lblOGC3.Text = OGCon[2].ToString("N3");
-                        }
-                        else
-                        {
-                            OGCon[2] = ((points[2] + Efficiency) / waterVol2) / 1000;
-                            lblOGC3.Text = OGCon[2].ToString("N3");
-                        }*/
                         finalGravityChange(cboGrain3);
-                        /*if (Attn[2] == 0)
-                        {
-                            lblFGC3.Text = OGCon[2].ToString("N3");
-                        }
-                        else
-                        {
-                            FGCon[2] = OGCon[2] - (1 + OGCon[2] - 1) * yeastFact / 100;
-                            lblFGC3.Text = FGCon[2].ToString("N3");
-                        }*/
+
                     }
                 }
                 else
                 {
                 }
                 srmContribution(cboGrain3);
-
                 finalCalculations(cboGrain3);
             }
             catch (Exception)
@@ -1242,7 +1152,7 @@ namespace Homebrew_Recipe_Calc
                     {
                         percentChange(percent[3]);
 
-                        Lbs[3] = grainWt[3] / 1000 * 2.20462;
+                        Lbs[3] = grainWt[3] / 453.59237;
                         lblLbGrain4.Text = Lbs[3].ToString("N2");
 
                         if (Lbs[3] >= .01)
@@ -1261,17 +1171,6 @@ namespace Homebrew_Recipe_Calc
                         {
                             lblFer4.Text = "0.0";
                         }
-                        /*if (grainWt[3] >= .01)
-                        {
-                            Lov[3] = double.Parse(lblLov4.Text);
-                            contribution[3] = 1.49 * Math.Pow((Lov[3] * Lbs[3] / waterVol1), .69);
-                            lblCon4.Text = contribution[3].ToString("N1");
-                            lblSRMTotal.Text = contribution.Sum().ToString("N0");
-                        }
-                        else
-                        {
-                            lblCon4.Text = "0.0";
-                        }*/
                         if (grainWt[3] >= .01)
                         {
                             waterAb[3] = double.Parse(waterAbsor[3]);
@@ -1279,33 +1178,14 @@ namespace Homebrew_Recipe_Calc
                             lblWA4.Text = lblwaterAB[3].ToString();
                         }
                         originalGravityChange(cboGrain4);
-                        /*if (lblAff4.Text == "y")
-                        {
-                            OGCon[3] = ((points[3] * Efficiency) / waterVol2) / 1000;
-                            lblOGC4.Text = OGCon[3].ToString("N3");
-                        }
-                        else
-                        {
-                            OGCon[3] = ((points[3] + Efficiency) / waterVol2) / 1000;
-                            lblOGC4.Text = OGCon[3].ToString("N3");
-                        }*/
                         finalGravityChange(cboGrain4);
-                        /*if (Attn[3] == 0)
-                        {
-                            lblFGC4.Text = OGCon[3].ToString("N3");
-                        }
-                        else
-                        {
-                            FGCon[3] = OGCon[3] - (1 + OGCon[3] - 1) * yeastFact / 100;
-                            lblFGC4.Text = FGCon[3].ToString("N3");
-                        }*/
+
                     }
                 }
                 else
                 {
                 }
                 srmContribution(cboGrain4);
-
                 finalCalculations(cboGrain4);
             }
             catch (Exception)
@@ -1325,7 +1205,7 @@ namespace Homebrew_Recipe_Calc
                     {
                         percentChange(percent[4]);
 
-                        Lbs[4] = grainWt[4] / 1000 * 2.20462;
+                        Lbs[4] = grainWt[4] / 453.59237;
                         lblLbGrain5.Text = Lbs[4].ToString("N2");
 
                         if (Lbs[4] >= .01)
@@ -1344,17 +1224,6 @@ namespace Homebrew_Recipe_Calc
                         {
                             lblFer5.Text = "0.0";
                         }
-                        /*if (grainWt[4] >= .01)
-                        {
-                            Lov[4] = double.Parse(lblLov5.Text);
-                            contribution[4] = 1.49 * Math.Pow((Lov[4] * Lbs[4] / waterVol1), .69);
-                            lblCon5.Text = contribution[4].ToString("N1");
-                            lblSRMTotal.Text = contribution.Sum().ToString("N0");
-                        }
-                        else
-                        {
-                            lblCon5.Text = "0.0";
-                        }*/
                         if (grainWt[4] >= .01)
                         {
                             waterAb[4] = double.Parse(waterAbsor[4]);
@@ -1362,33 +1231,13 @@ namespace Homebrew_Recipe_Calc
                             lblWA5.Text = lblwaterAB[4].ToString();
                         }
                         originalGravityChange(cboGrain5);
-                        /*if (lblAff5.Text == "y")
-                        {
-                            OGCon[4] = ((points[4] * Efficiency) / waterVol2) / 1000;
-                            lblOGC5.Text = OGCon[4].ToString("N3");
-                        }
-                        else
-                        {
-                            OGCon[4] = ((points[4] + Efficiency) / waterVol2) / 1000;
-                            lblOGC5.Text = OGCon[4].ToString("N3");
-                        }*/
                         finalGravityChange(cboGrain5);
-                        /*if (Attn[4] == 0)
-                        {
-                            lblFGC5.Text = OGCon[4].ToString("N3");
-                        }
-                        else
-                        {
-                            FGCon[4] = OGCon[4] - (1 + OGCon[4] - 1) * yeastFact / 100;
-                            lblFGC5.Text = FGCon[4].ToString("N3");
-                        }*/
                     }
                 }
                 else
                 {
                 }
                 srmContribution(cboGrain5);
-
                 finalCalculations(cboGrain5);
             }
             catch (Exception)
@@ -1407,7 +1256,7 @@ namespace Homebrew_Recipe_Calc
                     {
                         percentChange(percent[5]);
 
-                        Lbs[5] = grainWt[5] / 1000 * 2.20462;
+                        Lbs[5] = grainWt[5] / 453.59237;
                         lblLbGrain6.Text = Lbs[5].ToString("N2");
 
                         if (Lbs[5] >= .01)
@@ -1426,17 +1275,6 @@ namespace Homebrew_Recipe_Calc
                         {
                             lblFer6.Text = "0.0";
                         }
-                        /*if (grainWt[5] >= .01)
-                        {
-                            Lov[5] = double.Parse(lblLov6.Text);
-                            contribution[5] = 1.49 * Math.Pow((Lov[5] * Lbs[5] / waterVol1), .69);
-                            lblCon6.Text = contribution[5].ToString("N1");
-                            lblSRMTotal.Text = contribution.Sum().ToString("N0");
-                        }
-                        else
-                        {
-                            lblCon6.Text = "0.0";
-                        }*/
                         if (grainWt[5] >= .01)
                         {
                             waterAb[5] = double.Parse(waterAbsor[5]);
@@ -1444,26 +1282,7 @@ namespace Homebrew_Recipe_Calc
                             lblWA6.Text = lblwaterAB[5].ToString();
                         }
                         originalGravityChange(cboGrain6);
-                        /*if (lblAff6.Text == "y")
-                        {
-                            OGCon[5] = ((points[5] * Efficiency) / waterVol2) / 1000;
-                            lblOGC6.Text = OGCon[5].ToString("N3");
-                        }
-                        else
-                        {
-                            OGCon[5] = ((points[5] + Efficiency) / waterVol2) / 1000;
-                            lblOGC6.Text = OGCon[5].ToString("N3");
-                        }*/
                         finalGravityChange(cboGrain6);
-                        /*if (Attn[5] == 0)
-                        {
-                            lblFGC6.Text = OGCon[5].ToString("N3");
-                        }
-                        else
-                        {
-                            FGCon[5] = OGCon[5] - (1 + OGCon[5] - 1) * yeastFact / 100;
-                            lblFGC6.Text = FGCon[5].ToString("N3");
-                        }*/
                     }
                 }
                 else
@@ -1489,7 +1308,7 @@ namespace Homebrew_Recipe_Calc
                     {
                         percentChange(percent[6]);
 
-                        Lbs[6] = grainWt[6] / 1000 * 2.20462;
+                        Lbs[6] = grainWt[6] / 453.59237;
                         lblLbGrain7.Text = Lbs[6].ToString("N2");
 
                         if (Lbs[6] >= .01)
@@ -1508,17 +1327,6 @@ namespace Homebrew_Recipe_Calc
                         {
                             lblFer7.Text = "0.0";
                         }
-                        /*if (grainWt[6] >= .01)
-                        {
-                            Lov[6] = double.Parse(lblLov7.Text);
-                            contribution[6] = 1.49 * Math.Pow((Lov[6] * Lbs[6] / waterVol1), .69);
-                            lblCon7.Text = contribution[6].ToString("N1");
-                            lblSRMTotal.Text = contribution.Sum().ToString("N0");
-                        }
-                        else
-                        {
-                            lblCon7.Text = "0.0";
-                        }*/
                         if (grainWt[6] >= .01)
                         {
                             waterAb[6] = double.Parse(waterAbsor[6]);
@@ -1526,26 +1334,7 @@ namespace Homebrew_Recipe_Calc
                             lblWA7.Text = lblwaterAB[6].ToString();
                         }
                         originalGravityChange(cboGrain7);
-                        /*if (lblAff7.Text == "y")
-                        {
-                            OGCon[6] = ((points[6] * Efficiency) / waterVol2) / 1000;
-                            lblOGC7.Text = OGCon[6].ToString("N3");
-                        }
-                        else
-                        {
-                            OGCon[6] = ((points[6] + Efficiency) / waterVol2) / 1000;
-                            lblOGC7.Text = OGCon[6].ToString("N3");
-                        }*/
                         finalGravityChange(cboGrain7);
-                        /*if (Attn[6] == 0)
-                        {
-                            lblFGC7.Text = OGCon[6].ToString("N3");
-                        }
-                        else
-                        {
-                            FGCon[6] = OGCon[6] - (1 + OGCon[6] - 1) * yeastFact / 100;
-                            lblFGC7.Text = FGCon[6].ToString("N3");
-                        }*/
                     }
                 }
                 else
@@ -1571,7 +1360,7 @@ namespace Homebrew_Recipe_Calc
                     {
                         percentChange(percent[7]);
 
-                        Lbs[7] = grainWt[7] / 1000 * 2.20462;
+                        Lbs[7] = grainWt[7] / 453.59237;
                         lblLbGrain8.Text = Lbs[7].ToString("N2");
 
                         if (Lbs[7] >= .01)
@@ -1590,17 +1379,6 @@ namespace Homebrew_Recipe_Calc
                         {
                             lblFer8.Text = "0.0";
                         }
-                        /*if (grainWt[7] >= .01)
-                        {
-                            Lov[7] = double.Parse(lblLov8.Text);
-                            contribution[7] = 1.49 * Math.Pow((Lov[7] * Lbs[7] / waterVol1), .69);
-                            lblCon8.Text = contribution[7].ToString("N1");
-                            lblSRMTotal.Text = contribution.Sum().ToString("N0");
-                        }
-                        else
-                        {
-                            lblCon8.Text = "0.0";
-                        }*/
                         if (grainWt[7] >= .01)
                         {
                             waterAb[7] = double.Parse(waterAbsor[7]);
@@ -1608,26 +1386,7 @@ namespace Homebrew_Recipe_Calc
                             lblWA8.Text = lblwaterAB[7].ToString();
                         }
                         originalGravityChange(cboGrain8);
-                        /*if (lblAff8.Text == "y")
-                        {
-                            OGCon[7] = ((points[7] * Efficiency) / waterVol2) / 1000;
-                            lblOGC8.Text = OGCon[7].ToString("N3");
-                        }
-                        else
-                        {
-                            OGCon[7] = ((points[7] + Efficiency) / waterVol2) / 1000;
-                            lblOGC8.Text = OGCon[7].ToString("N3");
-                        }*/
-                        finalGravityChange(cboGrain8); 
-                        /*if (Attn[7] == 0)
-                        {
-                            lblFGC8.Text = OGCon[7].ToString("N3");
-                        }
-                        else
-                        {
-                            FGCon[7] = OGCon[7] - (1 + OGCon[7] - 1) * yeastFact / 100;
-                            lblFGC8.Text = FGCon[7].ToString("N3");
-                        }*/
+                        finalGravityChange(cboGrain8);
                     }
                 }
                 else
@@ -1654,7 +1413,7 @@ namespace Homebrew_Recipe_Calc
                     {
                         percentChange(percent[8]);
 
-                        Lbs[8] = grainWt[8] / 1000 * 2.20462;
+                        Lbs[8] = grainWt[8] / 453.59237;
                         lblLbGrain9.Text = Lbs[8].ToString("N2");
 
                         if (Lbs[8] >= .01)
@@ -1674,17 +1433,6 @@ namespace Homebrew_Recipe_Calc
                             lblFer9.Text = "0.0";
                         }
                         srmContribution(cboGrain9);
-                        /*if (grainWt[8] >= .01)
-                        {
-                            Lov[8] = double.Parse(lblLov9.Text);
-                            contribution[8] = 1.49 * Math.Pow((Lov[8] * Lbs[8] / waterVol1), .69);
-                            lblCon9.Text = contribution[8].ToString("N1");
-                            lblSRMTotal.Text = contribution.Sum().ToString("N0");
-                        }
-                        else
-                        {
-                            lblCon9.Text = "0.0";
-                        }*/
                         if (grainWt[8] >= .01)
                         {
                             waterAb[8] = double.Parse(waterAbsor[8]);
@@ -1692,26 +1440,7 @@ namespace Homebrew_Recipe_Calc
                             lblWA9.Text = lblwaterAB[8].ToString();
                         }
                         originalGravityChange(cboGrain9);
-                        /*if (lblAff9.Text == "y")
-                        {
-                            OGCon[8] = ((points[8] * Efficiency) / waterVol2) / 1000;
-                            lblOGC9.Text = OGCon[8].ToString("N3");
-                        }
-                        else
-                        {
-                            OGCon[8] = ((points[8] + Efficiency) / waterVol2) / 1000;
-                            lblOGC9.Text = OGCon[8].ToString("N3");
-                        }*/
                         finalGravityChange(cboGrain9);
-                        /*if (Attn[8] == 0)
-                        {
-                            lblFGC9.Text = OGCon[8].ToString("N3");
-                        }
-                        else
-                        {
-                            FGCon[8] = OGCon[8] - (1 + OGCon[8] - 1) * yeastFact / 100;
-                            lblFGC9.Text = FGCon[8].ToString("N3");
-                        }*/
                     }
                 }
                 else
@@ -1953,14 +1682,13 @@ namespace Homebrew_Recipe_Calc
             calcABV ABVC = new calcABV();
             ABVC.Show();
         }
-        private void txtWaterVolume_TextChanged_1(object sender, EventArgs e)
+        private void txtWaterVolume_Leave(object sender, EventArgs e)
         {
+
             try
             {
                 if (txtWaterVolume.Text.Length > 0)
                 {
-                    //txtHopAB.Text = "5";
-                    //tHopAB = double.Parse(txtHopAB.Text);
                     watervolume(txtWaterVolume);
                     hopDataChange(txtWaterVolume);
                     ibuCalculator(txtWaterVolume);
@@ -2003,9 +1731,12 @@ namespace Homebrew_Recipe_Calc
                     grainWt8(grainWt[8]);
                 }
             }
-            catch (Exception) { }
+            catch (Exception)
+            {
+                MessageBox.Show("Water Catch");
+            }
         }
-        private void cboHops1_SelectedIndexChanged(object sender, EventArgs e)
+        private void txtWaterVolume_TextChanged_1(object sender, EventArgs e)
         {
             try
             {
@@ -2176,7 +1907,7 @@ namespace Homebrew_Recipe_Calc
                         }
                         catch (Exception)
                         {
-                           // MessageBox.Show("IBU1 Calculator");
+                            // MessageBox.Show("IBU1 Calculator");
                         }
                     }
                     else
@@ -2231,7 +1962,7 @@ namespace Homebrew_Recipe_Calc
                         }
                         catch (Exception)
                         {
-                           // MessageBox.Show("IBU2 Calculator");
+                            // MessageBox.Show("IBU2 Calculator");
                         }
                     }
                     else
@@ -2531,7 +2262,6 @@ namespace Homebrew_Recipe_Calc
                 if (cboHops5 != null)
                 {
                     hopAmount[4] = double.Parse(txtHopAmt5.Text);
-                    //changeHopData(hopAmount[4]);
                     if (hopAmount[4] != 0)
                     {
                     }
@@ -2547,7 +2277,7 @@ namespace Homebrew_Recipe_Calc
                     watervolume(txtHopAmt5);
                 }
             }
-            catch { }   
+            catch { }
         }
 
         private void ibuCalculator(object sender)
@@ -2708,6 +2438,50 @@ namespace Homebrew_Recipe_Calc
             catch { }
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtboxLBS != null)
+                {
+                    double lbs = double.Parse(txtboxLBS.Text);
+                    double grams = lbs * 453.59237;
+                    txtboxGrams.Text = grams.ToString("F0");
+                }
+                else { }
+            }
+            catch { }   
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtboxOz != null)
+                {
+                    double Oz = double.Parse(txtboxOz.Text);
+                    double grams2 = Oz * 28.34952;
+                    txtboxGrams2.Text = grams2.ToString("F0");
+                }
+                else { }
+            }
+            catch { }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtboxGal != null)
+                {
+                    double gal = double.Parse(txtboxGal.Text);
+                    double mL = gal * 3785.411784;
+                    txtboxmL.Text = mL.ToString("F0");
+                }
+                else { }
+            }
+            catch { }
+        }
     }
 }
 
