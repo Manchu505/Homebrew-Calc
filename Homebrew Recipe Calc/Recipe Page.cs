@@ -961,7 +961,7 @@ namespace Homebrew_Recipe_Calc
                     lblAff9.Text = reader["Attenuation Affected by Mash Cond?"].ToString();
                     lblLov9.Text = reader["Lovibond"].ToString();
                     lblDP9.Text = reader["DP"].ToString();
-                    lblWA9.Text = reader["Absorption (ml/g)"].ToString();
+                    //lblWA9.Text = reader["Absorption (ml/g)"].ToString();
                     waterAbsor[8] = reader["Absorption (ml/g)"].ToString();
                 }
                 conn.Close();
