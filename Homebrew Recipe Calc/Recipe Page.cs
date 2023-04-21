@@ -727,7 +727,7 @@ namespace Homebrew_Recipe_Calc
                     lblAff1.Text = reader["Attenuation Affected by Mash Cond?"].ToString();
                     lblLov1.Text = reader["Lovibond"].ToString();
                     lblDP1.Text = reader["DP"].ToString();
-                    lblWA1.Text = reader["Absorption (ml/g)"].ToString();
+                    //lblWA1.Text = reader["Absorption (ml/g)"].ToString();
                     waterAbsor[0] = reader["Absorption (ml/g)"].ToString();
                 }
                 conn.Close();
@@ -756,7 +756,7 @@ namespace Homebrew_Recipe_Calc
                     lblAff2.Text = reader["Attenuation Affected by Mash Cond?"].ToString();
                     lblLov2.Text = reader["Lovibond"].ToString();
                     lblDP2.Text = reader["DP"].ToString();
-                    lblWA2.Text = reader["Absorption (ml/g)"].ToString();
+                    //lblWA2.Text = reader["Absorption (ml/g)"].ToString();
                     waterAbsor[1] = reader["Absorption (ml/g)"].ToString();
                 }
                 conn.Close();
@@ -785,7 +785,7 @@ namespace Homebrew_Recipe_Calc
                     lblAff3.Text = reader["Attenuation Affected by Mash Cond?"].ToString();
                     lblLov3.Text = reader["Lovibond"].ToString();
                     lblDP3.Text = reader["DP"].ToString();
-                    lblWA3.Text = reader["Absorption (ml/g)"].ToString();
+                    //lblWA3.Text = reader["Absorption (ml/g)"].ToString();
                     waterAbsor[2] = reader["Absorption (ml/g)"].ToString();
                 }
                 conn.Close();
@@ -814,7 +814,7 @@ namespace Homebrew_Recipe_Calc
                     lblAff4.Text = reader["Attenuation Affected by Mash Cond?"].ToString();
                     lblLov4.Text = reader["Lovibond"].ToString();
                     lblDP4.Text = reader["DP"].ToString();
-                    lblWA4.Text = reader["Absorption (ml/g)"].ToString();
+                    //lblWA4.Text = reader["Absorption (ml/g)"].ToString();
                     waterAbsor[3] = reader["Absorption (ml/g)"].ToString();
                 }
                 conn.Close();
@@ -845,7 +845,7 @@ namespace Homebrew_Recipe_Calc
                     lblAff5.Text = reader["Attenuation Affected by Mash Cond?"].ToString();
                     lblLov5.Text = reader["Lovibond"].ToString();
                     lblDP5.Text = reader["DP"].ToString();
-                    lblWA5.Text = reader["Absorption (ml/g)"].ToString();
+                    //lblWA5.Text = reader["Absorption (ml/g)"].ToString();
                     waterAbsor[4] = reader["Absorption (ml/g)"].ToString();
                 }
                 conn.Close();
@@ -874,7 +874,7 @@ namespace Homebrew_Recipe_Calc
                     lblAff6.Text = reader["Attenuation Affected by Mash Cond?"].ToString();
                     lblLov6.Text = reader["Lovibond"].ToString();
                     lblDP6.Text = reader["DP"].ToString();
-                    lblWA6.Text = reader["Absorption (ml/g)"].ToString();
+                    //lblWA6.Text = reader["Absorption (ml/g)"].ToString();
                     waterAbsor[5] = reader["Absorption (ml/g)"].ToString();
                 }
                 conn.Close();
@@ -903,7 +903,7 @@ namespace Homebrew_Recipe_Calc
                     lblAff7.Text = reader["Attenuation Affected by Mash Cond?"].ToString();
                     lblLov7.Text = reader["Lovibond"].ToString();
                     lblDP7.Text = reader["DP"].ToString();
-                    lblWA7.Text = reader["Absorption (ml/g)"].ToString();
+                    //lblWA7.Text = reader["Absorption (ml/g)"].ToString();
                     waterAbsor[6] = reader["Absorption (ml/g)"].ToString();
                 }
                 conn.Close();
@@ -932,7 +932,7 @@ namespace Homebrew_Recipe_Calc
                     lblAff8.Text = reader["Attenuation Affected by Mash Cond?"].ToString();
                     lblLov8.Text = reader["Lovibond"].ToString();
                     lblDP8.Text = reader["DP"].ToString();
-                    lblWA8.Text = reader["Absorption (ml/g)"].ToString();
+                   // lblWA8.Text = reader["Absorption (ml/g)"].ToString();
                     waterAbsor[7] = reader["Absorption (ml/g)"].ToString();
                 }
                 conn.Close();
@@ -1289,7 +1289,6 @@ namespace Homebrew_Recipe_Calc
                 {
                 }
                 srmContribution(cboGrain6);
-
                 finalCalculations(cboGrain6);
             }
             catch (Exception)
@@ -1341,7 +1340,6 @@ namespace Homebrew_Recipe_Calc
                 {
                 }
                 srmContribution(cboGrain7);
-
                 finalCalculations(cboGrain7);
             }
             catch (Exception)
@@ -1393,7 +1391,6 @@ namespace Homebrew_Recipe_Calc
                 {
                 }
                 srmContribution(cboGrain8);
-
                 finalCalculations(cboGrain8);
             }
             catch (Exception)
@@ -1736,7 +1733,7 @@ namespace Homebrew_Recipe_Calc
                 MessageBox.Show("Water Catch");
             }
         }
-        private void txtWaterVolume_TextChanged_1(object sender, EventArgs e)
+        private void cboHops1_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
             {
@@ -2190,6 +2187,7 @@ namespace Homebrew_Recipe_Calc
                         lblHopWA1.Text = "0";
                     }
                     watervolume(txtHopAmt1);
+                    ibuCalculator(txtHopAmt1);
                 }
             }
             catch { }
@@ -2212,6 +2210,7 @@ namespace Homebrew_Recipe_Calc
                         lblHopWA2.Text = "0";
                     }
                     watervolume(txtHopAmt2);
+                    ibuCalculator(txtHopAmt2);
                 }
             }
             catch { }
@@ -2233,6 +2232,7 @@ namespace Homebrew_Recipe_Calc
                         lblHopWA3.Text = "0";
                     }
                     watervolume(txtHopAmt3);
+                    ibuCalculator(txtHopAmt3);
                 }
             }
             catch { }
@@ -2254,6 +2254,7 @@ namespace Homebrew_Recipe_Calc
                         lblHopWA4.Text = "0";
                     }
                     watervolume(txtHopAmt4);
+                    ibuCalculator(txtHopAmt4);
                 }
             }
             catch { }
@@ -2275,6 +2276,7 @@ namespace Homebrew_Recipe_Calc
                         lblHopWA5.Text = "0";
                     }
                     watervolume(txtHopAmt5);
+                    ibuCalculator(txtHopAmt5);
                 }
             }
             catch { }
@@ -2482,6 +2484,7 @@ namespace Homebrew_Recipe_Calc
             }
             catch { }
         }
+
     }
 }
 
