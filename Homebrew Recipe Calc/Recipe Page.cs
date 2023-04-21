@@ -143,6 +143,7 @@ namespace Homebrew_Recipe_Calc
             }
             catch { }
         }
+        // Water Volume calculations - also convert from mL to Gal.
         private void watervolume(object sender)
         {
             try
@@ -159,6 +160,7 @@ namespace Homebrew_Recipe_Calc
             }
             catch (Exception) { }
         }
+        // Percent Calculations 
         private void percentChange(object sender)
         {
             try
@@ -224,6 +226,7 @@ namespace Homebrew_Recipe_Calc
                 MessageBox.Show("Percent Change Error");
             }
         }
+        // Original Gravity calculations - broken out to support calling for displays
         private void originalGravityChange(object sender)
         {
             try
@@ -352,6 +355,8 @@ namespace Homebrew_Recipe_Calc
                 MessageBox.Show("OG Change Error");
             }
         }
+
+        // Final Gravity calculations - broken out to support calling for displays
         private void finalGravityChange(object sender)
         {
             try
@@ -471,6 +476,7 @@ namespace Homebrew_Recipe_Calc
                 MessageBox.Show("FG Change Error");
             }
         }
+        // Color calculations - broken out to support calling for displays
         private void srmContribution(object sender)
         {
             try
@@ -599,6 +605,7 @@ namespace Homebrew_Recipe_Calc
                 MessageBox.Show("SRM Change Error");
             }
         }
+        //Yeast Selection Box Change
         private void lstYeast_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
@@ -672,7 +679,6 @@ namespace Homebrew_Recipe_Calc
         {
             grainDataChange(cboGrain1);
         }
-
         private void cboGrain2_SelectedIndexChanged(object sender, EventArgs e)
         {
             grainDataChange(cboGrain2);
@@ -727,7 +733,6 @@ namespace Homebrew_Recipe_Calc
                     lblAff1.Text = reader["Attenuation Affected by Mash Cond?"].ToString();
                     lblLov1.Text = reader["Lovibond"].ToString();
                     lblDP1.Text = reader["DP"].ToString();
-                    //lblWA1.Text = reader["Absorption (ml/g)"].ToString();
                     waterAbsor[0] = reader["Absorption (ml/g)"].ToString();
                 }
                 conn.Close();
@@ -756,7 +761,6 @@ namespace Homebrew_Recipe_Calc
                     lblAff2.Text = reader["Attenuation Affected by Mash Cond?"].ToString();
                     lblLov2.Text = reader["Lovibond"].ToString();
                     lblDP2.Text = reader["DP"].ToString();
-                    //lblWA2.Text = reader["Absorption (ml/g)"].ToString();
                     waterAbsor[1] = reader["Absorption (ml/g)"].ToString();
                 }
                 conn.Close();
@@ -785,7 +789,6 @@ namespace Homebrew_Recipe_Calc
                     lblAff3.Text = reader["Attenuation Affected by Mash Cond?"].ToString();
                     lblLov3.Text = reader["Lovibond"].ToString();
                     lblDP3.Text = reader["DP"].ToString();
-                    //lblWA3.Text = reader["Absorption (ml/g)"].ToString();
                     waterAbsor[2] = reader["Absorption (ml/g)"].ToString();
                 }
                 conn.Close();
@@ -814,7 +817,6 @@ namespace Homebrew_Recipe_Calc
                     lblAff4.Text = reader["Attenuation Affected by Mash Cond?"].ToString();
                     lblLov4.Text = reader["Lovibond"].ToString();
                     lblDP4.Text = reader["DP"].ToString();
-                    //lblWA4.Text = reader["Absorption (ml/g)"].ToString();
                     waterAbsor[3] = reader["Absorption (ml/g)"].ToString();
                 }
                 conn.Close();
@@ -845,7 +847,6 @@ namespace Homebrew_Recipe_Calc
                     lblAff5.Text = reader["Attenuation Affected by Mash Cond?"].ToString();
                     lblLov5.Text = reader["Lovibond"].ToString();
                     lblDP5.Text = reader["DP"].ToString();
-                    //lblWA5.Text = reader["Absorption (ml/g)"].ToString();
                     waterAbsor[4] = reader["Absorption (ml/g)"].ToString();
                 }
                 conn.Close();
@@ -874,7 +875,6 @@ namespace Homebrew_Recipe_Calc
                     lblAff6.Text = reader["Attenuation Affected by Mash Cond?"].ToString();
                     lblLov6.Text = reader["Lovibond"].ToString();
                     lblDP6.Text = reader["DP"].ToString();
-                    //lblWA6.Text = reader["Absorption (ml/g)"].ToString();
                     waterAbsor[5] = reader["Absorption (ml/g)"].ToString();
                 }
                 conn.Close();
@@ -903,7 +903,6 @@ namespace Homebrew_Recipe_Calc
                     lblAff7.Text = reader["Attenuation Affected by Mash Cond?"].ToString();
                     lblLov7.Text = reader["Lovibond"].ToString();
                     lblDP7.Text = reader["DP"].ToString();
-                    //lblWA7.Text = reader["Absorption (ml/g)"].ToString();
                     waterAbsor[6] = reader["Absorption (ml/g)"].ToString();
                 }
                 conn.Close();
@@ -932,7 +931,6 @@ namespace Homebrew_Recipe_Calc
                     lblAff8.Text = reader["Attenuation Affected by Mash Cond?"].ToString();
                     lblLov8.Text = reader["Lovibond"].ToString();
                     lblDP8.Text = reader["DP"].ToString();
-                   // lblWA8.Text = reader["Absorption (ml/g)"].ToString();
                     waterAbsor[7] = reader["Absorption (ml/g)"].ToString();
                 }
                 conn.Close();
@@ -961,7 +959,6 @@ namespace Homebrew_Recipe_Calc
                     lblAff9.Text = reader["Attenuation Affected by Mash Cond?"].ToString();
                     lblLov9.Text = reader["Lovibond"].ToString();
                     lblDP9.Text = reader["DP"].ToString();
-                    //lblWA9.Text = reader["Absorption (ml/g)"].ToString();
                     waterAbsor[8] = reader["Absorption (ml/g)"].ToString();
                 }
                 conn.Close();
@@ -1671,7 +1668,6 @@ namespace Homebrew_Recipe_Calc
         private void quitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Close Button
-            //this.Close();
             Application.Exit();
         }
         private void aBVCalculatorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1904,7 +1900,6 @@ namespace Homebrew_Recipe_Calc
                         }
                         catch (Exception)
                         {
-                            // MessageBox.Show("IBU1 Calculator");
                         }
                     }
                     else
@@ -1959,7 +1954,6 @@ namespace Homebrew_Recipe_Calc
                         }
                         catch (Exception)
                         {
-                            // MessageBox.Show("IBU2 Calculator");
                         }
                     }
                     else
@@ -2013,7 +2007,6 @@ namespace Homebrew_Recipe_Calc
                         }
                         catch (Exception)
                         {
-                            //MessageBox.Show("IBU3 Calculator");
                         }
                     }
                     else
@@ -2064,7 +2057,6 @@ namespace Homebrew_Recipe_Calc
                             }
                             catch (Exception)
                             {
-                                //MessageBox.Show("IBU4 Calculator");
                             }
                         }
                         else
@@ -2117,7 +2109,6 @@ namespace Homebrew_Recipe_Calc
 
                             catch (Exception)
                             {
-                                //MessageBox.Show("IBU5 Calculator");
                             }
                         }
                         else
@@ -2439,7 +2430,7 @@ namespace Homebrew_Recipe_Calc
             }
             catch { }
         }
-
+        //Quick Calculator -- lbs to g
         private void button2_Click(object sender, EventArgs e)
         {
             try
@@ -2454,7 +2445,7 @@ namespace Homebrew_Recipe_Calc
             }
             catch { }   
         }
-
+        //Quick Calculator -- oz to g
         private void button3_Click(object sender, EventArgs e)
         {
             try
@@ -2469,7 +2460,7 @@ namespace Homebrew_Recipe_Calc
             }
             catch { }
         }
-
+        //Quick Calculator -- gal to mL
         private void button4_Click(object sender, EventArgs e)
         {
             try
