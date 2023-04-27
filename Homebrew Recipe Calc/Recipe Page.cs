@@ -67,7 +67,6 @@ namespace Homebrew_Recipe_Calc
                     cboGrain8.Items.Add(reader["Grain"].ToString());
                     cboGrain9.Items.Add(reader["Grain"].ToString());
                 }
-                label34.Text = "Grain Connection Successful";
                 conn.Close();
 
             }
@@ -99,7 +98,6 @@ namespace Homebrew_Recipe_Calc
                     cboHopMin5.Items.Add(reader["Minutes"].ToString());
 
                 }
-                label12.Text = "Hop Connection Successful";
                 conn.Close();
             }
             catch (Exception)
@@ -120,7 +118,6 @@ namespace Homebrew_Recipe_Calc
                 {
                     lstYeast.Items.Add(reader["YeastStrain"].ToString());
                 }
-                label13.Text = "Yeast Connection Successful";
                 conn.Close();
 
             }

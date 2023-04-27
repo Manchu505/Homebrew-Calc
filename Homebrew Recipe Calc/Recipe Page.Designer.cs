@@ -185,7 +185,6 @@
             this.label28 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.txtWaterToAdd = new System.Windows.Forms.TextBox();
@@ -256,8 +255,6 @@
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.lblBeerName = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -337,7 +334,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 78F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 79F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.lblLbGrain1, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblLbGrain2, 2, 1);
@@ -2009,17 +2006,6 @@
             this.label32.Text = "label1";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label34
-            // 
-            this.label34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(67, 715);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(35, 13);
-            this.label34.TabIndex = 7;
-            this.label34.Text = "label1";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // btnClose
             // 
             this.btnClose.Location = new System.Drawing.Point(1535, 35);
@@ -2247,7 +2233,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 84F));
             this.tableLayoutPanel2.Controls.Add(this.lblIBU1, 5, 0);
             this.tableLayoutPanel2.Controls.Add(this.cboHops1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.cboHops2, 0, 1);
@@ -2447,7 +2433,7 @@
             this.lblHopWA1.BackColor = System.Drawing.Color.DarkGray;
             this.lblHopWA1.Location = new System.Drawing.Point(535, 9);
             this.lblHopWA1.Name = "lblHopWA1";
-            this.lblHopWA1.Size = new System.Drawing.Size(77, 13);
+            this.lblHopWA1.Size = new System.Drawing.Size(78, 13);
             this.lblHopWA1.TabIndex = 17;
             this.lblHopWA1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2457,7 +2443,7 @@
             this.lblHopWA2.AutoSize = true;
             this.lblHopWA2.Location = new System.Drawing.Point(535, 40);
             this.lblHopWA2.Name = "lblHopWA2";
-            this.lblHopWA2.Size = new System.Drawing.Size(77, 13);
+            this.lblHopWA2.Size = new System.Drawing.Size(78, 13);
             this.lblHopWA2.TabIndex = 17;
             this.lblHopWA2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2467,7 +2453,7 @@
             this.lblHopWA3.AutoSize = true;
             this.lblHopWA3.Location = new System.Drawing.Point(535, 71);
             this.lblHopWA3.Name = "lblHopWA3";
-            this.lblHopWA3.Size = new System.Drawing.Size(77, 13);
+            this.lblHopWA3.Size = new System.Drawing.Size(78, 13);
             this.lblHopWA3.TabIndex = 17;
             this.lblHopWA3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2477,7 +2463,7 @@
             this.lblHopWA4.AutoSize = true;
             this.lblHopWA4.Location = new System.Drawing.Point(535, 102);
             this.lblHopWA4.Name = "lblHopWA4";
-            this.lblHopWA4.Size = new System.Drawing.Size(77, 13);
+            this.lblHopWA4.Size = new System.Drawing.Size(78, 13);
             this.lblHopWA4.TabIndex = 17;
             this.lblHopWA4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2487,7 +2473,7 @@
             this.lblHopWA5.AutoSize = true;
             this.lblHopWA5.Location = new System.Drawing.Point(535, 133);
             this.lblHopWA5.Name = "lblHopWA5";
-            this.lblHopWA5.Size = new System.Drawing.Size(77, 13);
+            this.lblHopWA5.Size = new System.Drawing.Size(78, 13);
             this.lblHopWA5.TabIndex = 17;
             this.lblHopWA5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2766,28 +2752,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(492, 116);
             this.panel6.TabIndex = 21;
-            // 
-            // label12
-            // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(256, 715);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(35, 13);
-            this.label12.TabIndex = 7;
-            this.label12.Text = "label1";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label13
-            // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(445, 715);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(35, 13);
-            this.label13.TabIndex = 7;
-            this.label13.Text = "label1";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblBeerName
             // 
@@ -3153,9 +3117,6 @@
             this.Controls.Add(this.txtWaterToAdd);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label34);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.menuStrip1);
@@ -3236,7 +3197,6 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label lblPPG2;
-        private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label lblAttn2;
         private System.Windows.Forms.Label lblLov2;
         private System.Windows.Forms.Label lblPPG1;
@@ -3413,8 +3373,6 @@
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cboHopMin1;
         private System.Windows.Forms.ComboBox cboHopMin2;
         private System.Windows.Forms.ComboBox cboHopMin3;
